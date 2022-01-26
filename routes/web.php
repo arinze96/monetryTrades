@@ -17,17 +17,17 @@ use App\Http\Controllers\AccountController;
 */
 
 // Route::get('/', [UserController::class,"index"])->name("app.home");
-// Route::get("/register/{ref?}",[UserController::class,"register"])->name("user.register");
+Route::get("/register/{ref?}",[UserController::class,"register"])->name("user.register");
 Route::get("/forgot-password",[UserController::class,"forgotPasswordAdmin"])->name("user.forgot-password");
-// Route::get("/login",[UserController::class,"login"])->name("user.login");
+Route::get("/login",[UserController::class,"login"])->name("user.login");
 Route::get("/faq",[UserController::class,"returnFAQ"])->name("user.faq");
 // Route::get("/privacy",[UserController::class,"returnPrivacy"])->name("user.privacy");
 Route::get("/terms",[UserController::class,"returnTerms"])->name("user.terms");
 Route::get("/withdrawalList",[UserController::class,"returnWithdrawalList"])->name("user.withdrawal_list");
 Route::get("/depositeList",[UserController::class,"returnDepositeList"])->name("user.deposit_list");
 Route::get("/topInvestors",[UserController::class,"returnTopInvestor"])->name("user.top_investors");
-// Route::post("/register/{ref?}",[UserController::class,"register"])->name("user.register.post");
-// Route::post("/login",[UserController::class,"login"])->name("user.login.post");
+Route::post("/register/{ref?}",[UserController::class,"register"])->name("user.register.post");
+Route::post("/login",[UserController::class,"login"])->name("user.login.post");
 // Route::post("/person_loan",[UserController::class,"loan"])->name("user.loan");
 // Route::post("/person_loan",[UserController::class,"loan"])->name("user.loan.post");
 Route::get("/static/{name}",[UserController::class,"staticPages"])->name("user.pages.view");
@@ -40,11 +40,11 @@ Route::match(["get","post"],"/master/reset-password/{email}/{token}",[UserContro
 Route::get('/', [UserController::class,"index"])->name("app.home");
 Route::get('/about', [UserController::class,"about"])->name("about");
 Route::get('/faq', [UserController::class,"returnFAQ"])->name("faq");
-Route::get('/login', [UserController::class,"login"])->name("login");
-Route::get('/register', [UserController::class,"register"])->name("register");
+// Route::get('/login', [UserController::class,"login"])->name("login");
+// Route::get('/register', [UserController::class,"register"])->name("register");
 Route::get('/team', [UserController::class,"ourteam"])->name("team");
 Route::get('/real-estate', [UserController::class,"realestate"])->name("real_estate");
-Route::get('/home', [UserController::class,"home"])->name("home");
+// Route::get('/home', [UserController::class,"home"])->name("home");
 Route::get('/children-account', [UserController::class,"childrenaccount"])->name("children-account");
 Route::get('/charity', [UserController::class,"charity"])->name("charity");
 Route::get('/investments', [UserController::class,"investments"])->name("investments");

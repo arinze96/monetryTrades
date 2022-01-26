@@ -3,15 +3,15 @@
 
 <head>
     <title>{{ config("app.name") }}</title>
-    @include('includes.c_css')
+    @include('include.c_css')
 </head>
 
 <body class="nk-body npc-crypto has-sidebar has-sidebar-fat ui-clean ">
     <div class="nk-app-root">
         <div class="nk-main ">
-            @include('includes.c_sidebar')
+            @include('include.c_sidebar')
             <div class="nk-wrap ">
-                @include('includes.c_header')
+                @include('include.c_header')
                 <div class="nk-content ">
                   <div class="container-fluid">
                    <div class="nk-content-inner">
@@ -202,7 +202,7 @@
                  </div>
                 <!-- content @e -->
                 <!-- footer @s -->
-                @include('includes.c_footer')
+                @include('include.c_footer')
                 <!-- footer @e -->
             </div>
             <!-- wrap @e -->
@@ -212,7 +212,7 @@
     <!-- app-root @e -->
     <!-- JavaScript -->
     {{-- footer --}}
-    @include('includes.c_script')
+    @include('include.c_script')
     <!-- END PAGE CONTAINER-->
 </body>
 

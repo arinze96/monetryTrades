@@ -3,7 +3,7 @@
 
 <head>
     <title>{{ config("app.name") }}</title>
-    @include('includes.c_css')
+    @include('include.c_css')
     <link id="skin-default" rel="stylesheet" href="{{ asset("assets/css/dropzone.min.css") }}">
 
 
@@ -14,12 +14,12 @@
         <!-- main @s -->
         <div class="nk-main ">
             <!-- sidebar @s -->
-            @include('includes.c_sidebar')
+            @include('include.c_sidebar')
             <!-- sidebar @e -->
             <!-- wrap @s -->
             <div class="nk-wrap ">
                 <!-- main header @s -->
-                @include('includes.c_header')
+                @include('include.c_header')
                 <!-- main header @e -->
                 <!-- content @s -->
                 <div class="nk-content nk-content-fluid">
@@ -149,7 +149,7 @@
                 </div>
                 <!-- content @e -->
                 <!-- footer @s -->
-                @include('includes.c_footer')
+                @include('include.c_footer')
                 <!-- footer @e -->
             </div>
             <!-- wrap @e -->
@@ -226,7 +226,7 @@
         let $proof_delete = "{{ route('user.deposit.proof.post',['delete']) }}";
         </script>
         {{-- footer --}}
-        @include('includes.c_script')
+        @include('include.c_script')
         <script src="{{ asset('assets/js/dropzone.min.js') }}"></script>
         <script src="{{ asset('assets/js/custom_dropzone.js') }}"></script>
     <!-- END PAGE CONTAINER-->

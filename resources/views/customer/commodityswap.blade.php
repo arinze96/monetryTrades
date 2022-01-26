@@ -4,7 +4,7 @@
 <head>
 
     <title>{{ config("app.name") }}</title>
-    @include('includes.c_css')
+    @include('include.c_css')
 
 
 </head>
@@ -12,13 +12,13 @@
 <body class="animsition" style="font-family: 'Open Sans', sans-serif, Verdana;">
 <div class="page-wrapper pb-0">
     <!-- MENU SIDEBAR-->
-      @include('includes.c_sidebar')
+      @include('include.c_sidebar')
     <!-- END MENU SIDEBAR-->
 
     <!-- PAGE CONTAINER-->
     <div class="page-container2">
         <!-- HEADER DESKTOP-->
-        @include('includes.c_header')
+        @include('include.c_header')
         <!-- END HEADER DESKTOP-->
 
         <!-- STATISTIC-->
@@ -173,7 +173,7 @@
     @endif
 
         {{-- footer --}}
-         @include('includes.c_footer')
+         @include('include.c_footer')
         <!-- END PAGE CONTAINER-->
     </div>
 
@@ -183,7 +183,7 @@
 
 
                   {{-- footer --}}
-        @include('includes.c_script')
+        @include('include.c_script')
 
 
         <!-- END PAGE CONTAINER-->

@@ -3,13 +3,13 @@
         <div class="container">
             <div class="top-info hidden-sm-down">
                 <div class="call-header">
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> (234) 0200 17813</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> <span style="color:black">(234) 0200 17813</span> </p>
                 </div>
                 <div class="address-header">
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> 95 South Park Ave, Switzerland</p>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><span style="color:black"> 95 South Park Ave, Switzerland</span></p>
                 </div>
                 <div class="mail-header">
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> info@gobiz.com</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> <span style="color:black">info@gobiz.com</span></p>
                 </div>
             </div>
             <div class="top-social hidden-sm-down">
@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="header-bottom heading sticky-header" id="heading">
+    <div class="header-bottom heading sticky-header" id="heading" style="  background-color: #212529;">
         <div class="container">
             <!-- STAR MOBILE LOGO -->
             <a href="index.html" class="logo">
@@ -56,13 +56,13 @@
                     <!-- STAR COLLAPSE MOBILE MENU -->
                     <li class="hidden-lg-up">
                         <div class="po">
-                            <a data-toggle="collapse" href="{{route('home')}}" aria-expanded="false">HOME</a>
+                            <a data-toggle="collapse" href="{{route('app.home')}}" aria-expanded="false">HOME</a>
                         </div>
 
                     </li>
                     <!-- END COLLAPSE MOBILE MENU -->
                     <li class="dropdown hidden-md-down">
-                        <a class="" data-toggle="" aria-haspopup="true" aria-expanded="false" href="{{route('home')}}">HOME</a>
+                        <a class="" data-toggle="" aria-haspopup="true" aria-expanded="false" href="{{route('app.home')}}">HOME</a>
                     </li>
                     <!-- STAR COLLAPSE MOBILE MENU -->
                     <li class="hidden-lg-up">
@@ -132,7 +132,7 @@
                     <!-- STAR COLLAPSE MOBILE MENU -->
                     <li class="hidden-lg-up">
                         <div class="po">
-                            <a data-toggle="" href="{{route('login')}}" aria-expanded="false">LOGIN</a>
+                            <a data-toggle="" href="{{route('user.login')}}" aria-expanded="false">LOGIN</a>
                         </div>
                         <div class="" id="blog">
 
@@ -140,10 +140,10 @@
                     </li>
                     <!-- END COLLAPSE MOBILE MENU -->
                     <li class="dropdown hidden-md-down">
-                        <a class="" aria-haspopup="true" aria-expanded="false" href="{{route('login')}}">LOGIN</a>
+                        <a class="" aria-haspopup="true" aria-expanded="false" href="{{route('user.login')}}">LOGIN</a>
 
                     </li>
-                    <li><a href="{{route('register')}}">REGISTER</a></li>
+                    <li><a href="{{route('user.register')}}">REGISTER</a></li>
                 </ul>
             </nav>
         </div>

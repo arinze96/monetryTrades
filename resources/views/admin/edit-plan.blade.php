@@ -9,7 +9,7 @@ $plan->max = ($plan->currency == "USD") ? round($plan->max,2) : $plan->max;
 <html lang="zxx" class="js">
 
 <head>
-    @include('includes.a_css')
+    @include('include.a_css')
     <!-- Page Title  -->
     <title>{{ config("app.name") }} Admin</title>
 </head>
@@ -19,12 +19,12 @@ $plan->max = ($plan->currency == "USD") ? round($plan->max,2) : $plan->max;
         <!-- main @s -->
         <div class="nk-main ">
             <!-- sidebar @s -->
-            @include('includes.a_sidebar')
+            @include('include.a_sidebar')
             <!-- sidebar @e -->
             <!-- wrap @s -->
             <div class="nk-wrap ">
                 <!-- main header @s -->
-                @include('includes.a_topbar')
+                @include('include.a_topbar')
                 <!-- main header @e -->
                 <!-- content @s -->
                 <div class="nk-content ">
@@ -198,7 +198,7 @@ $plan->max = ($plan->currency == "USD") ? round($plan->max,2) : $plan->max;
                  </div>
                 <!-- content @e -->
                 <!-- footer @s -->
-                @include('includes.a_footer')
+                @include('include.a_footer')
                 <!-- footer @e -->
             </div>
             <!-- wrap @e -->
@@ -207,7 +207,7 @@ $plan->max = ($plan->currency == "USD") ? round($plan->max,2) : $plan->max;
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
-    @include('includes.a_scripts')
+    @include('include.a_scripts')
 </body>
 
 </html>

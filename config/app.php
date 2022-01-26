@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Prostackinvest'),
+    'name' => env('APP_NAME', 'Monetarytrades'),
     'description' => env('APP_DESCRIPTION', 'Grow Your Passive Income Hourly and Increase Your Earnings Hourly'),
     'chat_link' => env('CHAT_LINK', 'prostackinvest'),
     'email' => env('APP_EMAIL', ''),

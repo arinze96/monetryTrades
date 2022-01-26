@@ -88,18 +88,18 @@ class UserController extends Controller
         return view('home.children-account');
     }
 
-    public function register(Request $request)
-    {
-        return view('auth.register');
-    }
+    // public function register(Request $request)
+    // {
+    //     return view('auth.register');
+    // }
     public function whatweoffer(Request $request)
     {
         return view('home.what-we-offer');
     }
-    public function login(Request $request)
-    {
-        return view('auth.login');
-    }
+    // public function login(Request $request)
+    // {
+    //     return view('auth.login');
+    // }
     public function company(Request $request)
     {
         return view('home.company');
@@ -165,56 +165,56 @@ class UserController extends Controller
         return view("home.top_investors");
     }
 
-    // public function register(Request $request, $ref = null)
-    // {
-    //     if ($request->method() == "GET") {
-    //         if (!empty($request->user()->id)) {
-    //             return redirect()->route('user.login');
-    //         }
-    //         return view("auth.register", ["ref" => $ref]);
-    //     }
-    //     $data = (object) $request->all();
-    //     $data->status = 1;
+    public function register(Request $request, $ref = null)
+    {
+        if ($request->method() == "GET") {
+            if (!empty($request->user()->id)) {
+                return redirect()->route('user.login');
+            }
+            return view("auth.register", ["ref" => $ref]);
+        }
+        $data = (object) $request->all();
+        $data->status = 1;
 
-    //     $validated =  $request->validate([
-    //         "firstname" => ["required"],
-    //         "lastname" => ["required"],
-    //         "username" => ["required", "unique:users,username"],
-    //         "email" => ["required", "unique:users,email"],
-    //         "referral" => ["nullable", "exists:users,username"],
-    //         "phone" => ["required", "unique:users,phone"],
-    //         "password" => ["required", "between:6,15", "confirmed"],
-    //         "password_confirmation" => ["required"],
-    //         "country" => ["required"],
-    //         "pin" => ["required", "digits:6", "numeric"],
-    //     ]);
+        $validated =  $request->validate([
+            "firstname" => ["required"],
+            "lastname" => ["required"],
+            "username" => ["required", "unique:users,username"],
+            "email" => ["required", "unique:users,email"],
+            "referral" => ["nullable", "exists:users,username"],
+            "phone" => ["required", "unique:users,phone"],
+            "password" => ["required", "between:6,15", "confirmed"],
+            "password_confirmation" => ["required"],
+            "country" => ["required"],
+            "pin" => ["required", "digits:6", "numeric"],
+        ]);
 
 
 
-    //     $user =  User::create([
-    //         "firstname" => $data->firstname,
-    //         "lastname" => $data->lastname,
-    //         "username" => $data->username,
-    //         "email" => $data->email,
-    //         "phone" => $data->phone,
-    //         "country" => $data->country,
-    //         "referral" => $data->referral,
-    //         "password" => Hash::make($data->password),
-    //         "pin" => $data->pin,
-    //         'status' => 1,
-    //     ]);
+        $user =  User::create([
+            "firstname" => $data->firstname,
+            "lastname" => $data->lastname,
+            "username" => $data->username,
+            "email" => $data->email,
+            "phone" => $data->phone,
+            "country" => $data->country,
+            "referral" => $data->referral,
+            "password" => Hash::make($data->password),
+            "pin" => $data->pin,
+            'status' => 1,
+        ]);
 
-    //     if (!empty($user)) {
-    //         Account::create([
-    //             "user_id" => $user->id,
-    //             "bitcoin_address" => "00",
-    //             "usdt_address" => "00",
-    //             "ethereum_address" => "00",
-    //             "litecoin_address" => "00",
-    //             "bitcoincash_address" => "00",
-    //             "binancecoin_address" => "00",
-    //             "dodgecoin_address" => "00",
-    //         ]);
+        if (!empty($user)) {
+            Account::create([
+                "user_id" => $user->id,
+                "bitcoin_address" => "00",
+                "usdt_address" => "00",
+                "ethereum_address" => "00",
+                "litecoin_address" => "00",
+                "bitcoincash_address" => "00",
+                "binancecoin_address" => "00",
+                "dodgecoin_address" => "00",
+            ]);
 
             // send email
             // $details = [
@@ -254,44 +254,44 @@ class UserController extends Controller
             // } catch (\Exception $e) {
             //     // Never reached
             // }
-    //         return  redirect()->route('user.login');
-    //     } else {
-    //         return abort(500, "Server Error");
-    //     }
-    // }
+            return  redirect()->route('user.login');
+        } else {
+            return abort(500, "Server Error");
+        }
+    }
 
-    // public function login(Request $request)
-    // {
-
-
-    //     if ($request->method() == "GET") {
-    //         if (!empty($request->user()->id)) {
-    //             return redirect()->route('user.dashboard.view');
-    //         }
-
-    //         return view("auth.login");
-    //     }
-    //     $data = (object) $request->all();
+    public function login(Request $request)
+    {
 
 
-    //     $validated =  $request->validate([
-    //         "email" => ["required"],
-    //         "password" => ["required"]
-    //     ]);
+        if ($request->method() == "GET") {
+            if (!empty($request->user()->id)) {
+                return redirect()->route('user.dashboard.view');
+            }
 
-    //     $user = User::where("email", "=", "{$data->email}")->get()->first();
-    //     // dd($user);
-    //     if ($user && Hash::check($data->password, $user->password)) {
-    //         if ($user->status != 1) {
-    //             return view("auth.login", ["noMatch" => "Your account has been suspended by the administration, please report to " . config("app.email")]);
-    //         }
-    //         Auth::loginUsingId($user->id);
-    //         $route = ($user->role  == 1) ? "admin.dashboard.view" : "user.dashboard.view";
-    //         return redirect()->route($route);
-    //     } else {
-    //         return view("auth.login", ["noMatch" => "Invalid Login Detail"]);
-    //     }
-    // }
+            return view("auth.login");
+        }
+        $data = (object) $request->all();
+
+
+        $validated =  $request->validate([
+            "email" => ["required"],
+            "password" => ["required"]
+        ]);
+
+        $user = User::where("email", "=", "{$data->email}")->get()->first();
+        // dd($user);
+        if ($user && Hash::check($data->password, $user->password)) {
+            if ($user->status != 1) {
+                return view("auth.login", ["noMatch" => "Your account has been suspended by the administration, please report to " . config("app.email")]);
+            }
+            Auth::loginUsingId($user->id);
+            $route = ($user->role  == 1) ? "admin.dashboard.view" : "user.dashboard.view";
+            return redirect()->route($route);
+        } else {
+            return view("auth.login", ["noMatch" => "Invalid Login Detail"]);
+        }
+    }
 
     public function forgotPasswordAdmin(Request $request)
     {
