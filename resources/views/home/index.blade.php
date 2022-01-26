@@ -15,9 +15,9 @@
 
 <body>
 
-    {{-- @include('include.home_header1') --}}
+    @include('include.home_header1')
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#212529;">
+            {{-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#212529;">
                 <div class="container">
                     <a class="navbar-brand" href="#page-top"
                         ><img src="{{ asset("assets/images/slider-main/bg1.jpg") }}" alt="..."
@@ -54,7 +54,7 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav> --}}
             <!-- Masthead-->
             <header class="masthead">
                 <div class="container">

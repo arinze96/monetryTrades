@@ -1,181 +1,151 @@
-<div id="top-bar" class="top-bar">
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-8 col-md-8">
-            <ul class="top-info text-center text-md-left">
-                <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">9051 Constra Incorporate, USA</p>
-                </li>
-            </ul>
-          </div>
-          <!--/ Top info end -->
-
-          <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
-            <ul class="list-unstyled">
-                <li>
-                  <a title="Facebook" href="https://facebbok.com/themefisher.com">
-                      <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
-                  </a>
-                  <a title="Twitter" href="https://twitter.com/themefisher.com">
-                      <span class="social-icon"><i class="fab fa-twitter"></i></span>
-                  </a>
-                  <a title="Instagram" href="https://instagram.com/themefisher.com">
-                      <span class="social-icon"><i class="fab fa-instagram"></i></span>
-                  </a>
-                  <a title="Linkdin" href="https://github.com/themefisher.com">
-                      <span class="social-icon"><i class="fab fa-github"></i></span>
-                  </a>
-                </li>
-            </ul>
-          </div>
-          <!--/ Top social end -->
-      </div>
-      <!--/ Content row end -->
-    </div>
-    <!--/ Container end -->
-</div>
-
-
-<header id="header" class="header-one">
-    <div class="bg-white">
-      <div class="container">
-        <div class="logo-area">
-            <div class="row align-items-center">
-              <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-                  <a class="d-block" href="index.html">
-                    <img loading="lazy" src="images/logo.png" alt="Constra">
-                  </a>
-              </div><!-- logo end -->
-    
-              <div class="col-lg-9 header-right">
-                  <ul class="top-info-box">
-                    <li>
-                      <div class="info-box">
-                        <div class="info-box-content">
-                            <p class="info-box-title">Call Us</p>
-                            <p class="info-box-subtitle">(+9) 847-291-4353</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="info-box">
-                        <div class="info-box-content">
-                            <p class="info-box-title">Email Us</p>
-                            <p class="info-box-subtitle">office@Constra.com</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="last">
-                      <div class="info-box last">
-                        <div class="info-box-content">
-                            <p class="info-box-title">Global Certificate</p>
-                            <p class="info-box-subtitle">ISO 9001:2017</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="header-get-a-quote">
-                      <a class="btn btn-primary" href="contact.html">Get A Quote</a>
-                    </li>
-                  </ul><!-- Ul end -->
-              </div><!-- header right end -->
-            </div><!-- logo area end -->
-    
-        </div><!-- Row end -->
-      </div><!-- Container end -->
-    </div>
-  
-    <div class="site-navigation">
-      <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  
-                  <div id="navbar-collapse" class="collapse navbar-collapse">
-                      <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item dropdown active">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li class="active"><a href="#">Home One</a></li>
-                              <li><a href="index-2.html">Home Two</a></li>
-                            </ul>
-                        </li>
-  
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="about.html">About Us</a></li>
-                              <li><a href="team.html">Our People</a></li>
-                              <li><a href="testimonials.html">Testimonials</a></li>
-                              <li><a href="faq.html">Faq</a></li>
-                              <li><a href="pricing.html">Pricing</a></li>
-                            </ul>
-                        </li>
-                
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="projects.html">Projects All</a></li>
-                              <li><a href="projects-single.html">Projects Single</a></li>
-                            </ul>
-                        </li>
-                
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="services.html">Services All</a></li>
-                              <li><a href="service-single.html">Services Single</a></li>
-                            </ul>
-                        </li>
-                
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Features <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="typography.html">Typography</a></li>
-                              <li><a href="404.html">404</a></li>
-                              <li class="dropdown-submenu">
-                                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Parent Menu</a>
-                                  <ul class="dropdown-menu">
-                                    <li><a href="#!">Child Menu 1</a></li>
-                                    <li><a href="#!">Child Menu 2</a></li>
-                                    <li><a href="#!">Child Menu 3</a></li>
-                                  </ul>
-                              </li>
-                            </ul>
-                        </li>
-                
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="news-left-sidebar.html">News Left Sidebar</a></li>
-                              <li><a href="news-right-sidebar.html">News Right Sidebar</a></li>
-                              <li><a href="news-single.html">News Single</a></li>
-                            </ul>
-                        </li>
-                
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                      </ul>
-                  </div>
-                </nav>
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="top-info hidden-sm-down">
+                <div class="call-header">
+                    <p style="color: #212529;"><i class="fa fa-phone" aria-hidden="true"></i> (234) 0200 17813</p>
+                </div>
+                <div class="address-header">
+                    <p style="color: #212529;"><i class="fa fa-map-marker" aria-hidden="true"></i> 95 South Park Ave, Switzerland</p>
+                </div>
+                <div class="mail-header">
+                    <p style="color: #212529;"><i class="fa fa-envelope" aria-hidden="true"></i> info@gobiz.com</p>
+                </div>
             </div>
-            <!--/ Col end -->
-          </div>
-          <!--/ Row end -->
-  
-          <div class="nav-search">
-            <span id="search"><i class="fa fa-search"></i></span>
-          </div><!-- Search end -->
-  
-          <div class="search-block" style="display: none;">
-            <label for="search-field" class="w-100 mb-0">
-              <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
-            </label>
-            <span class="search-close">&times;</span>
-          </div><!-- Site search end -->
-      </div>
-      <!--/ Container end -->
-  
+            <div class="top-social hidden-sm-down">
+                <div class="social-icons-header">
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--/ Navigation end -->
-  </header>
+    <div class="header-bottom heading sticky-header" id="heading" style="  background-color: #212529;">
+        <div class="container">
+            <!-- STAR MOBILE LOGO -->
+            <a href="index.html" class="logo">
+                <img src="{{asset('assets/images/logo.svg')}}" alt="businesspro">
+            </a>
+            <!-- END MOBILE LOGO -->
+            <div class="get-quote hidden-lg-down">
+                <a data-scroll href="{{route('team')}}">
+                    <p>CONTACT US</p>
+                </a>
+            </div>
+            <button type="button" class="search-button" data-toggle="collapse" data-target="#bloq-search" aria-expanded="false">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="button-menu hidden-lg-up" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <form action="#" id="bloq-search" class="collapse">
+                <div class="bloq-search">
+                    <input type="text" placeholder="search...">
+                    <input type="submit" value="Search">
+                </div>
+            </form>
+
+            <nav id="main-menu" class="collapse">
+                <ul>
+                    <!-- STAR COLLAPSE MOBILE MENU -->
+                    <li class="hidden-lg-up">
+                        <div class="po">
+                            <a data-toggle="collapse" href="{{route('home')}}" aria-expanded="false">HOME</a>
+                        </div>
+
+                    </li>
+                    <!-- END COLLAPSE MOBILE MENU -->
+                    <li class="dropdown hidden-md-down">
+                        <a class="" data-toggle="" aria-haspopup="true" aria-expanded="false" href="{{route('home')}}">HOME</a>
+                    </li>
+                    <!-- STAR COLLAPSE MOBILE MENU -->
+                    <li class="hidden-lg-up">
+                        <div class="po">
+                            <a data-toggle="collapse" href="{{route('company')}}" aria-expanded="false">COMPANY</a>
+                        </div>
+                        <div class="collapse" id="about">
+                            <div class="card card-block">
+                                <a class="dropdown-item" href="about">About Us</a>
+                                <a class="dropdown-item" href="{{route('what-we-offer')}}">What We Offer</a>
+                                <a class="dropdown-item" href="{{route('risk-management')}}">Risk Management</a>
+                                <a class="dropdown-item" href="{{route('faq')}}">FAQ</a>
+                                <a class="dropdown-item" href="{{route('team')}}">Our Team</a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <!-- END COLLAPSE MOBILE MENU -->
+                    <li class="dropdown hidden-md-down">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('company')}}">COMPANY</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="about">About Us</a>
+                            <a class="dropdown-item" href="{{route('what-we-offer')}}">What We Offer</a>
+                            <a class="dropdown-item" href="{{route('risk-management')}}">Risk Management</a>
+                            <a class="dropdown-item" href="{{route('faq')}}">FAQ</a>
+                            <a class="dropdown-item" href="{{route('team')}}">Our Team</a>
+                        </div>
+                    </li>
+                    <!-- STAR COLLAPSE MOBILE MENU -->
+                    <li class="hidden-lg-up">
+                        <div class="po">
+                            <a data-toggle="collapse" href="{{route('investments')}}" aria-expanded="false">INVESTMENTS</a>
+                        </div>
+                        <div class="collapse" id="services">
+                            <div class="card card-block">
+                                <a class="dropdown-item" href="{{route('real_estate')}}">Real Estate</a>
+                                <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a>
+                                <a class="dropdown-item" href="{{route('cryptocurrency-plans')}}">Cryptocurrency Plans</a>
+                                <a class="dropdown-item" href="{{route('retirement')}}">Retirement</a>
+                                <a class="dropdown-item" href="{{route('children-account')}}">Children Account</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- END COLLAPSE MOBILE MENU -->
+                    <li class="dropdown hidden-md-down">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('investments')}}">INVESTMENTS</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{{route('real_estate')}}">Real Estate</a>
+                            <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a>
+                            <a class="dropdown-item" href="{{route('cryptocurrency-plans')}}">Cryptocurrency Plans</a>
+                            <a class="dropdown-item" href="{{route('retirement')}}">Retirement</a>
+                            <a class="dropdown-item" href="{{route('children-account')}}">Children Account</a>
+                        </div>
+                    </li>
+                    <!-- STAR COLLAPSE MOBILE MENU -->
+                    <li class="hidden-lg-up">
+                        <div class="po">
+                            <a data-toggle="" href="{route('charity')}}" aria-expanded="false">CHARITY</a>
+                        </div>
+
+                    </li>
+                    <!-- END COLLAPSE MOBILE MENU -->
+                    <li class="dropdown hidden-md-down">
+                        <a class="" aria-haspopup="true" aria-expanded="false" href="{{route('charity')}}">CHARITY</a>
+
+                    </li>
+                    <!-- STAR COLLAPSE MOBILE MENU -->
+                    <li class="hidden-lg-up">
+                        <div class="po">
+                            <a data-toggle="" href="{{route('login')}}" aria-expanded="false">LOGIN</a>
+                        </div>
+                        <div class="" id="blog">
+
+                        </div>
+                    </li>
+                    <!-- END COLLAPSE MOBILE MENU -->
+                    <li class="dropdown hidden-md-down">
+                        <a class="" aria-haspopup="true" aria-expanded="false" href="{{route('login')}}">LOGIN</a>
+
+                    </li>
+                    <li><a href="{{route('register')}}">REGISTER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
