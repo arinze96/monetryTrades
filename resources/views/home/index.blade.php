@@ -14,6 +14,9 @@
 
 
 <body>
+    <div class="preloader">
+        <div class="reverse-spinner"></div>
+    </div>
 
     @include('include.home_header1')
             <!-- Navigation-->
