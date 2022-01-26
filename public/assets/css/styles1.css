@@ -3031,8 +3031,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #ffc800;
-  border-color: #ffc800;
+  background-color: #03a9f5;
+  border-color: #03a9f5;
 }
 .btn-primary:hover {
   color: #fff;
@@ -3055,7 +3055,7 @@ textarea.form-control-lg {
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #ffc800;
+  background-color: #03a9f5;
   border-color: #ffc800;
 }
 
@@ -4034,6 +4034,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background-color: #212529;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -4124,6 +4125,7 @@ textarea.form-control-lg {
 @media (min-width: 576px) {
   .navbar-expand-sm {
     flex-wrap: nowrap;
+    background-color: #212529;
     justify-content: flex-start;
   }
   .navbar-expand-sm .navbar-nav {
@@ -4177,6 +4179,7 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .navbar-expand-md {
     flex-wrap: nowrap;
+    background-color: #212529;
     justify-content: flex-start;
   }
   .navbar-expand-md .navbar-nav {
@@ -4231,6 +4234,7 @@ textarea.form-control-lg {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
+    background-color: #212529;
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -11373,6 +11377,7 @@ p {
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
+    background-color: #212529;
     padding-bottom: 1.5rem;
     border: none;
     background-color: transparent;
