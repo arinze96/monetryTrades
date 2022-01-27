@@ -1,12 +1,8 @@
 <div class="nk-sidebar nk-sidebar-fat nk-sidebar-fixed" data-content="sidebarMenu">
     <div class="nk-sidebar-element nk-sidebar-head">
         <div class="nk-sidebar-brand">
-            <a href="
-            {{ route('user.pages.view', ['index']) }}
-            #
-            " class="logo-link nk-sidebar-logo h3" style="font-size:2em">
-                {{ config("app.name") }}
-                
+            <a href="{{ route('user.pages.view', ['index']) }}" class="logo-link nk-sidebar-logo h3" style="font-size:2em">
+                {{ config("app.name") }}    
             </a>
         </div>
         <div class="nk-menu-trigger mr-n2">
@@ -26,12 +22,10 @@
                                 </div>
                                 <div class="user-info">
                                     <span class="lead-text">
-                                        {{-- {{ auth()->user()->username }} --}}
-                                        here
+                                        {{ auth()->user()->username }}
                                     </span>
                                     <span class="sub-text">
-                                        {{-- {{ auth()->user()->email }} --}}
-                                        here
+                                        {{ auth()->user()->email }}
                                     </span>
                                 </div>
                                 <div class="user-action">

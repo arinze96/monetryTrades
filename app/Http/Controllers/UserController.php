@@ -88,6 +88,11 @@ class UserController extends Controller
         return view('home.children-account');
     }
 
+    public function contact(Request $request)
+    {
+        return view('home.contact');
+    }
+
     // public function register(Request $request)
     // {
     //     return view('auth.register');

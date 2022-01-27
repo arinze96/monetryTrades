@@ -15,19 +15,18 @@
 
     <!-- END SECTION HEADINGS -->
     <section class="headings">
-		<div class="text-heading text-center">
-			<div class="container">
-				<h1>Our Team</h1>
-				<h2><a href="{{route('team')}}">Home </a> &nbsp;>>&nbsp; Our Team</h2>
-			</div>
-		</div>
-	</section>
+        <div class="text-heading text-center">
+            <div class="container">
+                <h1 style="margin-top:-10px; font-size:40px">Our Team</h1>
+                <h2><a href="index.html">Home </a> &nbsp;>>&nbsp; Our team</h2>
+            </div>
+        </div>
+    </section>
     <!-- START SECTION TEAM -->
     <section class="team">
         <div class="container">
             <div class="sec-title">
                 <h2><span>Meet Our </span>Experts</h2>
-                <p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus.</p>
             </div>
             <div class="row team-all">
                 <!--Team Block-->
@@ -35,14 +34,6 @@
                     <div class="inner-box team-details">
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{asset('assets/images/team/team-1.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Arling Tracy</a></h3>
@@ -55,14 +46,7 @@
                     <div class="inner-box team-details">
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{asset('assets/images/team/team-2.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+                           
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Carls Jhons</a></h3>
@@ -75,14 +59,7 @@
                     <div class="inner-box team-details">
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{asset('assets/images/team/team-3.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+                           
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Katy Grace</a></h3>
@@ -95,14 +72,7 @@
                     <div class="inner-box team-details">
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{asset('assets/images/team/team-4.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+                           
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Mark Web</a></h3>
@@ -117,14 +87,7 @@
                     <div class="inner-box team-details">
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{asset('assets/images/team/team-5.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+                           
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Arling Tracy</a></h3>
@@ -137,14 +100,7 @@
                     <div class="inner-box team-details">
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{asset('assets/images/team/team-6.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+                           
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Carls Jhons</a></h3>
@@ -157,14 +113,7 @@
                     <div class="inner-box team-details">
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{asset('assets/images/team/team-7.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+                           
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Katy Grace</a></h3>
@@ -177,14 +126,7 @@
                     <div class="inner-box team-details">
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{asset('assets/images/team/team-8.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+                           
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Mark Web</a></h3>

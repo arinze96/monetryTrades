@@ -1,201 +1,83 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-
-<!-- Mirrored from code-theme.com/html/gobiz/our-team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jan 2022 10:25:40 GMT -->
-
 <head>
     @include('include.home_css')
 </head>
 
-
-<body class="inner-pages">
-@include('include.home_header')
+<body class="inner-pages ser">
     <!-- START SECTION HEADINGS -->
+    @include('include.home_header')
 
-    <!-- END SECTION HEADINGS -->
     <section class="headings">
-		<div class="text-heading text-center">
-			<div class="container">
-				<h1>Our Team</h1>
-				<h2><a href="{{route('team')}}">Home </a> &nbsp;>>&nbsp; Our Team</h2>
-			</div>
-		</div>
-	</section>
-    <!-- START SECTION TEAM -->
-    <section class="team">
+        <div class="text-heading text-center">
+            <div class="container">
+                <h1 style="margin-top:-10px; font-size:40px">RISK MANAGEMENT</h1>
+                <h2><a href="index.html">Home </a> &nbsp;>>&nbsp; Risk management</h2>
+            </div>
+        </div>
+    </section>
+    <section id="case-study-single" class="case-study case-study-single">
         <div class="container">
-            <div class="sec-title">
-                <h2><span>Meet Our </span>Experts</h2>
-                <p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus.</p>
-            </div>
-            <div class="row team-all">
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-1.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3">
+
+                </div><!-- .col-lg-3 end -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="case--study-text">
+                                <h1 style="font-style:italics; color:#0f1341; text-align:center;">Risk Management</h1>
+
+                                <p>
+                                    Maintaining high-efficiency management of assets requires the framework of acceptable risks to be defined and applied to the operations of both QA algorithmic complex and manual trading department.
+                                </p>
+								<p>
+                                    All the funds used in active trading turnover are distributed across sub-accounts. The volume of assets put under the management of different QA algorithmic complex robots and traders is carried out by evaluating core KPIs on assets management's efficiency.
+								</p>
+								<p>
+                                    Monetarytrades uses its own proprietary software systems to remotely manage and monitor trading strategies across all the sub-accounts and blocks any operations with cryptocurrency assets in critical circumstances. This solution allows the chief risk manager and the risk management team to execute quick and efficient decisions on trading permits and limits for the entire trading system of the fund ensuring the strict compliance with risk management protocols at any time.
+								</p>
+                                <br>
+                                <h1 style="font-style:italics; color:#0f1341">Risk Factors</h1>
+								<p>
+                                    Risk is an inseparable part of any investment process, and even though Blueglide Capital is operating within guidelines aimed at minimizing the potential risks, our investors should be aware of all the existing risks of investing in cryptocurrencies:
+								</p>
+								<br>
+                                <p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
+                                    An inherent risk;
+                                </p>
+                                <p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
+                                    The risk of assets value depreciation;
+                                </p>
+                                <p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
+                                    The risk of tightening the legal regulations on cryptocurrencies or restriction on fund’s operations by the regulator;
+                                </p>
+                                <p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
+                                    The risk of inefficiency or failure of the trading algorithm or the trading robot;
+                                </p>
+                                <p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
+                                    The risk of insufficient qualification for market analysis and investment decision-making;
+                                </p>
+                                <p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
+                                    The risk of unauthorized access to the fund’s assets by by third parties;
+                                </p>
+                                <p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
+                                    The risk of incompetent internal actions and processes;
+                                </p>
+                                <p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
+                                    The risk of a sharp decline in the investment value of assets.
+                                </p>
                             </div>
                         </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Arling Tracy</a></h3>
-                            <div class="designation">Acountant</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-2.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Carls Jhons</a></h3>
-                            <div class="designation">Financial Advisor</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-3.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Katy Grace</a></h3>
-                            <div class="designation">Team Leader</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-4.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Mark Web</a></h3>
-                            <div class="designation">Founder &amp; CEO</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row team-all mt-44">
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-5.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Arling Tracy</a></h3>
-                            <div class="designation">Acountant</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-6.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Carls Jhons</a></h3>
-                            <div class="designation">Financial Advisor</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12 npb">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-7.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Katy Grace</a></h3>
-                            <div class="designation">Team Leader</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12 npb">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-8.jpg')}}" alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Mark Web</a></h3>
-                            <div class="designation">Founder &amp; CEO</div>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- END SECTION TEAM -->
+
+
 
     <!-- START FOOTER -->
     @include('include.home_footer')
@@ -208,6 +90,6 @@
 </body>
 
 
-<!-- Mirrored from code-theme.com/html/gobiz/our-team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jan 2022 10:25:44 GMT -->
+<!-- Mirrored from code-theme.com/html/gobiz/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jan 2022 10:25:48 GMT -->
 
 </html>

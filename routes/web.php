@@ -28,6 +28,7 @@ Route::get("/depositeList",[UserController::class,"returnDepositeList"])->name("
 Route::get("/topInvestors",[UserController::class,"returnTopInvestor"])->name("user.top_investors");
 Route::post("/register/{ref?}",[UserController::class,"register"])->name("user.register.post");
 Route::post("/login",[UserController::class,"login"])->name("user.login.post");
+Route::get("/contact",[UserController::class,"contact"])->name("user.contact");
 // Route::post("/person_loan",[UserController::class,"loan"])->name("user.loan");
 // Route::post("/person_loan",[UserController::class,"loan"])->name("user.loan.post");
 Route::get("/static/{name}",[UserController::class,"staticPages"])->name("user.pages.view");

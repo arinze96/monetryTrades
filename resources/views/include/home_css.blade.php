@@ -6,7 +6,7 @@
         <meta name="author" content="">
         <title>GoBiz - HTML5 Template</title>
         <!-- FAVICON -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/background/MT_Trans_Vector.png')}}">
         <!-- GOOGLE FONTS -->
         <link href="{{asset('../../../fonts.googleapis.com/csse4e2.css?family=Asap:400,400i%7CRaleway:600,800')}}" rel="stylesheet">
         <!-- FONT AWESOME -->

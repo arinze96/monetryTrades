@@ -1,11 +1,11 @@
-<footer class="first-footer">
+<footer class="first-footer" >
     <div class="top-footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="netabout">
-                        <a href="index.html" class="logo">
-                            <img src="{{asset('assets/images/logo.svg')}}" alt="netcom">
+                        <a href="{{route('app.home')}}" class="logo">
+                            <img src="{{asset('assets/images/background/MT_Trans_2.png')}}" alt="businesspro">
                         </a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p>
                     </div>
@@ -49,7 +49,7 @@
                                 <li><a href="{{route('market-analysis')}}">Market Analysis</a></li>
                                 <li><a href="{{route('cryptocurrency-plans')}}">Cryptocurrency Plans</a></li>
                                 <li><a href="{{route('children-account')}}">Children Account</a></li>
-                                <li><a href="{{route('retirement')}}">Retirement</a></li>
+                                <li><a href="{{route('cryptocurrency-plans')}}">Investment</a></li>
                                 <li class="no-pb"><a href="{{route('charity')}}">Charity</a></li>
                             </ul>
                         </div>

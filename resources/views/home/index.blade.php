@@ -249,14 +249,6 @@
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-1.jpg') }}"
                                     alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Arling Tracy</a></h3>
@@ -270,14 +262,6 @@
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-2.jpg') }}"
                                     alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Carls Jhons</a></h3>
@@ -291,14 +275,6 @@
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-3.jpg') }}"
                                     alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Katy Grace</a></h3>
@@ -312,14 +288,6 @@
                         <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-4.jpg') }}"
                                     alt="" /></a>
-                            <div class="team-hover">
-                                <ul class="team-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Mark Web</a></h3>
@@ -354,88 +322,79 @@
 
     <!-- START SECTION PRICING -->
     <section class="pricing-table">
-        <div class="container">
-            <div class="sec-title">
-                <h2><span>Pricing </span>Packages</h2>
-                <p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits
-                    adipisicing lacus.</p>
-            </div>
-            <div class="row">
-                <!-- plan start -->
-                <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="plan text-center">
-                        <span class="plan-name">Basic <small>Monthly plan</small></span>
-                        <p class="plan-price"><sup class="currency">$</sup><strong>49</strong><sub>.99</sub>
-                        </p>
-                        <ul class="list-unstyled">
-                            <li>Unlimited Extra Feature</li>
-                            <li>1 Month Free Resource</li>
-                            <li>100 Domain Hosting</li>
-                            <li>SSL Shopping Cart</li>
-                            <li>24/7 Tech Support</li>
-                            <li>Unlimited Project</li>
-                        </ul>
-                        <a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
-                    </div>
-                </div>
-                <!-- plan end -->
-                <!-- plan start -->
-                <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="plan text-center">
-                        <span class="plan-name">Standard <small>Monthly plan</small></span>
-                        <p class="plan-price"><sup class="currency">$</sup><strong>99</strong><sub>.99</sub>
-                        </p>
-                        <ul class="list-unstyled">
-                            <li>Unlimited Extra Feature</li>
-                            <li>1 Month Free Resource</li>
-                            <li>100 Domain Hosting</li>
-                            <li>SSL Shopping Cart</li>
-                            <li>24/7 Tech Support</li>
-                            <li>Unlimited Project</li>
-                        </ul>
-                        <a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
-                    </div>
-                </div>
-                <!-- plan end -->
-                <!-- plan start -->
-                <div class="col-lg-3 col-md-6 col-xs-12">
+		<div class="container">
+			<div class="sec-title">
+				<h2><span>Pricing </span>Packages</h2>
+				<p>Investment Plans</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-xs-12">
+					<div class="plan text-center">
+						<span class="plan-name">Classic<small>Plan</small></span>
+						<p class="plan-price"><sup class="currency">$</sup><strong>3,000</strong>
+						</p>
+						<ul class="list-unstyled">
+							<li>10% monthly</li>
+							<li>12 months investment duration</li>
+							<li>Security Management</li>
+							<li>Automated Payout</li>
+							<li>24/7 Tech Support</li>
+							<li>Unlimited Project</li>
+						</ul>
+						<a class="btn btn-secondary btn-lg" href="{{route('user.register')}}">Sign Up Now</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-xs-12">
+					<div class="plan text-center">
+						<span class="plan-name">Deluxe<small>Plan</small></span>
+						<p class="plan-price"><sup class="currency">$</sup><strong>100,000</strong>
+						</p>
+						<ul class="list-unstyled">
+							<li>15% monthly</li>
+							<li>12 months investment duration</li>
+							<li>Security Management</li>
+							<li>Automated Payout</li>
+							<li>24/7 Tech Support</li>
+							<li>Unlimited Project</li>
+						</ul>
+						<a class="btn btn-secondary btn-lg" href="{{route('user.register')}}">Sign Up Now</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="plan text-center featured no-mgb yes-mgb">
-                        <span class="plan-name">Professional <small>Monthly plan</small></span>
+                        <span class="plan-name">Master <small>plan</small></span>
                         <p class="plan-price"><sup
-                                class="currency">$</sup><strong>149</strong><sub>.99</sub></p>
+                                class="currency">$</sup><strong>500,000</strong></p>
                         <ul class="list-unstyled">
-                            <li>Unlimited Extra Feature</li>
-                            <li>1 Month Free Resource</li>
-                            <li>100 Domain Hosting</li>
-                            <li>SSL Shopping Cart</li>
-                            <li>24/7 Tech Support</li>
-                            <li>Unlimited Project</li>
+							<li>20% monthly</li>
+							<li>12 months investment duration</li>
+							<li>Security Management</li>
+							<li>Automated Payout</li>
+							<li>24/7 Tech Support</li>
+							<li>Unlimited Project</li>
                         </ul>
                         <a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
                     </div>
                 </div>
-                <!-- plan end -->
-                <!-- plan start -->
-                <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="plan text-center no-mgb">
-                        <span class="plan-name">Premium <small>Monthly plan</small></span>
-                        <p class="plan-price"><sup
-                                class="currency">$</sup><strong>399</strong><sub>.99</sub></p>
-                        <ul class="list-unstyled">
-                            <li>Unlimited Extra Feature</li>
-                            <li>1 Month Free Resource</li>
-                            <li>100 Domain Hosting</li>
-                            <li>SSL Shopping Cart</li>
-                            <li>24/7 Tech Support</li>
-                            <li>Unlimited Project</li>
-                        </ul>
-                        <a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
-                    </div>
-                </div>
-                <!-- plan end -->
-            </div>
-        </div>
-    </section>
+				<div class="col-lg-3 col-md-6 col-xs-12">
+					<div class="plan text-center">
+						<span class="plan-name">Grand<small>Plan</small></span>
+						<p class="plan-price"><sup class="currency">$</sup><strong>1,000,000</strong>
+						</p>
+						<ul class="list-unstyled">
+							<li>40% off monthly</li>
+							<li>24 months investment duration</li>
+							<li>Security Management</li>
+							<li>Automated Payout</li>
+							<li>24/7 Tech Support</li>
+							<li>Unlimited Project</li>
+						</ul>
+						<a class="btn btn-secondary btn-lg" href="{{route('user.register')}}">Sign Up Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
     <!-- END SECTION PRICING -->
 
     <!-- START SECTION TESTIMONIALS -->

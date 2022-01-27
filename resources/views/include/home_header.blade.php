@@ -25,15 +25,15 @@
             </div>
         </div>
     </div>
-    <div class="header-bottom heading sticky-header" id="heading" style="  background-color: #212529;">
+    <div class="header-bottom heading sticky-header" id="heading" style="  background-color: #368add;">
         <div class="container">
             <!-- STAR MOBILE LOGO -->
-            <a href="index.html" class="logo">
-                <img src="{{asset('assets/images/logo.svg')}}" alt="businesspro">
+            <a href="{{route('app.home')}}" class="logo">
+                <img src="{{asset('assets/images/background/MT_Trans_2.png')}}" alt="businesspro">
             </a>
             <!-- END MOBILE LOGO -->
             <div class="get-quote hidden-lg-down">
-                <a data-scroll href="{{route('team')}}">
+                <a data-scroll href="{{route('user.contact')}}">
                     <p>CONTACT US</p>
                 </a>
             </div>
@@ -100,7 +100,7 @@
                             <div class="card card-block">
                                 <a class="dropdown-item" href="{{route('real_estate')}}">Real Estate</a>
                                 <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a>
-                                <a class="dropdown-item" href="{{route('cryptocurrency-plans')}}">Cryptocurrency Plans</a>
+                                <a class="dropdown-item" href="{{route('cryptocurrency-plans')}}">investment Plans</a>
                                 <a class="dropdown-item" href="{{route('retirement')}}">Retirement</a>
                                 <a class="dropdown-item" href="{{route('children-account')}}">Children Account</a>
                             </div>
@@ -111,9 +111,9 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('investments')}}">INVESTMENTS</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="{{route('real_estate')}}">Real Estate</a>
-                            <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a>
-                            <a class="dropdown-item" href="{{route('cryptocurrency-plans')}}">Cryptocurrency Plans</a>
-                            <a class="dropdown-item" href="{{route('retirement')}}">Retirement</a>
+                            {{-- <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a> --}}
+                            <a class="dropdown-item" href="{{route('cryptocurrency-plans')}}">investment Plans</a>
+                            {{-- <a class="dropdown-item" href="{{route('retirement')}}">Retirement</a> --}}
                             <a class="dropdown-item" href="{{route('children-account')}}">Children Account</a>
                         </div>
                     </li>

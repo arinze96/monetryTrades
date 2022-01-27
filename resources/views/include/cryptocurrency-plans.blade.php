@@ -11,104 +11,21 @@
 	<!-- START SECTION HEADINGS -->
 @include('include.home_header')
 
-	<section class="headings">
-		<div class="text-heading text-center">
-			<div class="container">
-				<h1>Services</h1>
-				<h2><a href="{{route('home')}}">Home </a> &nbsp;>>&nbsp; Services</h2>
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION HEADINGS -->
-
-	<!-- START SECTION SERVICES -->
-	<section class="services text-center">
+<section class="headings">
+	<div class="text-heading text-center">
 		<div class="container">
-			<div class="sec-title">
-				<h2><span>Our Professional </span>Services</h2>
-				<p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus.</p>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-12 cell cel-1">
-					<img src="{{asset('assets/images/info/img-1.png')}}" width="70" alt="">
-					<h3>Consulting Business</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.</p>
-					<div class="inf-btn">
-						<a href="services-details.html" class="btn btn-secondary">Read More...</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-12 cell cel-2">
-					<img src="{{asset('assets/images/info/img-2.png')}}" width="70" alt="">
-					<h3>Financial Analysis</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.</p>
-					<div class="inf-btn">
-						<a href="services-details.html" class="btn btn-2 btn-secondary">Read More...</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-12 cell cel-3">
-					<img src="{{asset('assets/images/info/img-3.png')}}" width="70" alt="">
-					<h3>Global Business</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.</p>
-					<div class="inf-btn">
-						<a href="services-details.html" class="btn btn-secondary">Read More...</a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-12 cell cel-4">
-					<img src="{{asset('assets/images/info/img-4.png')}}" width="70" alt="">
-					<h3>Business Coaching</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.</p>
-					<div class="inf-btn">
-						<a href="services-details.html" class="btn btn-2 btn-secondary">Read More...</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-12 cell cel-5">
-					<img src="{{asset('images/info/img-5.png')}}" width="70" alt="">
-					<h3>Business Grow</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.</p>
-					<div class="inf-btn">
-						<a href="services-details.html" class="btn btn-secondary">Read More...</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-12 cell cel-6">
-					<img src="{{asset('assets/images/info/img-6.png')}}" width="70" alt="">
-					<h3>Finance Advisor</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.</p>
-					<div class="inf-btn">
-						<a href="services-details.html" class="btn btn-2 btn-secondary">Read More...</a>
-					</div>
-				</div>
-			</div>
+			<h1 style="margin-top:-10px; font-size:40px">INVESTMENT PLANS</h1>
+			<h2><a href="index.html">Home </a> &nbsp;>>&nbsp; Investment Plans</h2>
 		</div>
-	</section>
-	<!-- END SECTION SERVICES -->
-
-	<!-- START SECTION INFO-HELP -->
-	<section class="info-help">
-		<div class="container">
-			<div class="row info-head">
-				<div class="col-lg-6 col-md-8 col-xs-8">
-					<div class="info-text">
-						<h3>We Can Help With Your Business Today...</h3>
-						<p>Contact our customer support team if you have any further questions. We are here to help you out.</p>
-						<div class="inf-btn pro">
-							<a href="contact-us.html" class="btn btn-pro btn-secondary btn-lg">Contact Us Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-3"></div>
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION INFO-HELP -->
+	</div>
+</section>
 
 	<!-- START SECTION PRICING -->
 	<section class="pricing-table">
 		<div class="container">
 			<div class="sec-title">
 				<h2><span>Pricing </span>Packages</h2>
-				<p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus.</p>
+				<p>Investment Plans</p>
 			</div>
 			<div class="row">
 				<!-- plan start -->
