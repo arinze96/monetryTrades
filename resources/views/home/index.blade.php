@@ -61,14 +61,14 @@
             <!-- Masthead-->
             <header class="masthead">
                 <div class="container">
-                    <div class="masthead-subheading">Welcome To Our Studio!</div>
+                    <div class="masthead-subheading">A NEW WAY TO INVEST</div>
                     <div class="masthead-heading text-uppercase">
-                        It's Nice To Meet You
+                        Take the anxiety out of investing by letting us do the work for you
                     </div>
                     <a
                         class="btn btn-primary btn-xl text-uppercase"
-                        href="#services"
-                        >Tell Me More</a
+                        href="{{route('user.register')}}"
+                        >Get Started</a
                     >
                 </div>
             </header>
