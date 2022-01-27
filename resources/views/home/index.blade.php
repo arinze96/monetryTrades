@@ -310,9 +310,7 @@
             </div>
         </div>
     </section>
-    <!-- END SECTION INFO-HELP -->
 
-    <!-- START SECTION PRICING -->
     <section class="pricing-table">
 		<div class="container">
 			<div class="sec-title">
@@ -387,9 +385,7 @@
 			</div>
 		</div>
 	</section>
-    <!-- END SECTION PRICING -->
 
-    <!-- START SECTION TESTIMONIALS -->
     <section class="testimonials">
         <div class="container">
             <div class="sec-title">
@@ -525,9 +521,7 @@
             </div>
         </div>
     </section>
-    <!-- END SECTION TESTIMONIALS -->
 
-    <!-- STAR SECTION PARTNERS -->
     <div class="partners">
         <div class="container">
             <div class="owl-carousel style2">
@@ -545,8 +539,6 @@
         </div>
     </div>
 
-
-    <!-- START SECTION REQUEST -->
     <section class="request" id="quote">
         <div class="container">
             <div class="row">
@@ -589,9 +581,8 @@
             </div>
         </div>
     </section>
-    <!-- END SECTION REQUEST -->
 
-    <!-- START FOOTER -->
+    
 
 
     <a data-scroll href="#heading" class="go-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>

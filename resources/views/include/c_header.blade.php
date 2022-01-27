@@ -6,7 +6,7 @@
             </div>
             <div class="nk-header-brand d-xl-none">
                 <a href="{{ route('user.pages.view', ['index']) }}" class="logo-link h3">
-                    {{ config("app.name") }}
+                    {{-- {{ config("app.name") }} --}}Monetarytrades
                 </a>
             </div>
 
