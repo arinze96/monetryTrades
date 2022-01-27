@@ -62,7 +62,7 @@
             <header class="masthead">
                 <div class="container">
                     <div class="masthead-subheading">A NEW WAY TO INVEST</div>
-                    <div class="masthead-heading text-uppercase">
+                    <div class="masthead-heading" style="font-size:20px">
                         Take the anxiety out of investing by letting us do the work for you
                     </div>
                     <a
@@ -78,64 +78,57 @@
         <div class="container">
             <div class="sec-title">
                 <h2><span>Our Professional </span>Services</h2>
-                <p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits
-                    adipisicing lacus.</p>
+                <p>There are many ways in which our ivestment experts can help invest your funds for maximum returns</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 cell cel-1">
                     <img src="{{ asset('assets/images/info/img-1.png') }}" width="70" alt="">
                     <h3>Business Consulting</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor
-                        suscipit asperiores perspiciatis.</p>
+                    <p>At Monetarytrades we are on daily standby for Business Consulting</p>
                     <div class="inf-btn">
-                        <a href="services-details.html" class="btn btn-secondary">Read More...</a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 cell cel-2">
                     <img src="{{ asset('assets/images/info/img-2.png') }}" width="70" alt="">
                     <h3>Financial Analysis</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor
-                        suscipit asperiores perspiciatis.</p>
+                    <p>Our experts at Monetarytrades make proper market analysis before investing funds </p>
                     <div class="inf-btn">
-                        <a href="services-details.html" class="btn btn-2 btn-secondary">Read More...</a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 cell cel-3">
                     <img src="{{ asset('assets/images/info/img-3.png') }}" width="70" alt="">
                     <h3>Global Business</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor
-                        suscipit asperiores perspiciatis.</p>
+                    <p>Our team of Experts are successful investment fund managers on the best financial markets across the globe</p>
                     <div class="inf-btn">
-                        <a href="services-details.html" class="btn btn-secondary">Read More...</a>
+
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 cell cel-4">
                     <img src="{{ asset('assets/images/info/img-4.png') }}" width="70" alt="">
-                    <h3>Business Coaching</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor
-                        suscipit asperiores perspiciatis.</p>
+                    <h3>Cryptocurrency Investment</h3>
+                    <p>We help you invest funds in the best crypto asset for a maximum return</p>
                     <div class="inf-btn">
-                        <a href="services-details.html" class="btn btn-2 btn-secondary">Read More...</a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 cell cel-5">
                     <img src="{{ asset('assets/images/info/img-5.png') }}" width="70" alt="">
-                    <h3>Business Grow</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor
-                        suscipit asperiores perspiciatis.</p>
+                    <h3>Humanitarian Fund Raising</h3>
+                    <p>We raise funds for humaritarian purposes</p>
                     <div class="inf-btn">
-                        <a href="services-details.html" class="btn btn-secondary">Read More...</a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 cell cel-6">
                     <img src="{{ asset('assets/images/info/img-6.png') }}" width="70" alt="">
                     <h3>Finance Advisor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor
-                        suscipit asperiores perspiciatis.</p>
+                    <p>Our team of financial experts advices help advise you on how to manage your portfolio</p>
                     <div class="inf-btn">
-                        <a href="services-details.html" class="btn btn-2 btn-secondary">Read More...</a>
+
                     </div>
                 </div>
             </div>
@@ -149,10 +142,10 @@
             <div class="head-project">
                 <div class="sec-title project">
                     <h2><span>Our </span>Projects</h2>
-                    <p>There are many variations of lorem of Lorem Ipsum available for use.</p>
+                    <p>We involve in numerous projects</p>
                 </div>
                 <div class="inf-btn pro">
-                    <a href="project.html" class="btn btn-pro btn-secondary btn-lg">Show All Projects</a>
+                    <a href="#" class="btn btn-pro btn-secondary btn-lg">Show All Projects</a>
                 </div>
             </div>
             <div class="row portfolio-items">
@@ -163,7 +156,7 @@
                                 <img src="{{ asset('assets/images/projects/g-1.jpg') }}" alt="#">
                             </div>
                             <div class="project-bottom">
-                                <h4><a href="project-single.html">Business Consulting</a><span
+                                <h4><a href="#">Business Consulting</a><span
                                         class="category">Business</span></h4>
                             </div>
                             <div class="button">
@@ -181,7 +174,7 @@
                                 <img src="{{ asset('assets/images/projects/g-2.jpg') }}" alt="#">
                             </div>
                             <div class="project-bottom">
-                                <h4><a href="project-single.html">Business Grow</a><span
+                                <h4><a href="#">Business Grow</a><span
                                         class="category">Business</span></h4>
                             </div>
                             <div class="button">
@@ -199,7 +192,7 @@
                                 <img src="{{ asset('assets/images/projects/g-3.jpg') }}" alt="#">
                             </div>
                             <div class="project-bottom">
-                                <h4><a href="project-single.html">Financial Analysis</a><span
+                                <h4><a href="#">Financial Analysis</a><span
                                         class="category">Business</span></h4>
                             </div>
                             <div class="button">
@@ -217,7 +210,7 @@
                                 <img src="{{ asset('assets/images/projects/g-4.jpg') }}" alt="#">
                             </div>
                             <div class="project-bottom">
-                                <h4><a href="project-single.html">Finance Advisor</a><span
+                                <h4><a href="#">Finance Advisor</a><span
                                         class="category">Business</span></h4>
                             </div>
                             <div class="button">
@@ -239,8 +232,7 @@
         <div class="container">
             <div class="sec-title">
                 <h2><span>Our </span>Experts</h2>
-                <p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits
-                    adipisicing lacus.</p>
+                <p>This is our team of experts</p>
             </div>
             <div class="row team-all">
                 <!--Team Block-->
@@ -310,7 +302,7 @@
                         <p>Huge community of Consult, Advisor and Acountant ready for your project. Bring to the table
                             win-win survival strategies to ensure proactive domination going forward.</p>
                         <div class="inf-btn pro">
-                            <a href="contact-us.html" class="btn btn-pro btn-secondary btn-lg">Contact Us Now</a>
+                            <a href="{{route('user.contact')}}" class="btn btn-pro btn-secondary btn-lg">Contact Us Now</a>
                         </div>
                     </div>
                 </div>
@@ -402,21 +394,18 @@
         <div class="container">
             <div class="sec-title">
                 <h2><span>People</span> Says</h2>
-                <p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits
-                    adipisicing lacus.</p>
             </div>
             <div class="owl-carousel style1">
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius
-                            enim, tellus tincidunt tellus est sed</p>
+                        <p> Investing in Monetarytrades has been been great. The company is a true 24/7 investment platform that is innovative, reliable and secure!</p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
                             <img src="{{ asset('assets/images/testimonials/ts-1.jpg') }}" alt="" />
                         </div>
                         <div class="client-info">
-                            <h2>Lisa Smith</h2>
+                            <h2>Carol Deneth</h2>
                             <span>New York City</span>
                             <div class="client-reviews">
                                 <i class="fa fa-star"></i>
@@ -430,15 +419,14 @@
                 </div>
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius
-                            enim, tellus tincidunt tellus est sed</p>
+                        <p> I have been investing in Monetarytrades  since July 2021, They are truly amazing and are a key to me being able to retire from my job! I love their professionalism and responsiveness.</p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
                             <img src="{{ asset('assets/images/testimonials/ts-2.jpg') }}" alt="" />
                         </div>
                         <div class="client-info">
-                            <h2>Jhon Morris</h2>
+                            <h2>John camber</h2>
                             <span>Los Angeles</span>
                             <div class="client-reviews">
                                 <i class="fa fa-star"></i>
@@ -452,15 +440,14 @@
                 </div>
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius
-                            enim, tellus tincidunt tellus est sed</p>
+                        <p>The past couple of months I have invested with Montarytrades invest I have been very pleased with their superb investment model and their professional & outstanding staff.</p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
                             <img src="{{ asset('assets/images/testimonials/ts-3.jpg') }}" alt="" />
                         </div>
                         <div class="client-info">
-                            <h2>Mary Deshaw</h2>
+                            <h2>Denis Ortwele</h2>
                             <span>Chicago</span>
                             <div class="client-reviews">
                                 <i class="fa fa-star"></i>
@@ -474,8 +461,7 @@
                 </div>
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius
-                            enim, tellus tincidunt tellus est sed</p>
+                        <p>Monetary invest offers excellent customer service and passive income products that perform well even when the markets are crazy. I’ve been investing with them for 10 months and it’s been a great experience so far.</p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
@@ -496,8 +482,7 @@
                 </div>
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius
-                            enim, tellus tincidunt tellus est sed</p>
+                        <p>Since i started investing with Monetarytrades i have never regreted it</p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
@@ -518,8 +503,7 @@
                 </div>
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p>Lorem ipsum dolor sit amet, luctus posuere semper felis consectetuer hendrerit, enim varius
-                            enim, tellus tincidunt tellus est sed</p>
+                        <p>Monetrytrrades will help you manage your crypto portfolio... i can attest to that </p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
@@ -560,139 +544,7 @@
             </div>
         </div>
     </div>
-    <!-- END SECTION PARTNERS -->
 
-    <!-- START SECTION BLOG -->
-    <section class="blog-section">
-        <div class="container">
-            <div class="sec-title">
-                <h2><span>Latest</span> News</h2>
-                <p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits
-                    adipisicing lacus.</p>
-            </div>
-            <div class="news-wrap">
-                <div class="row">
-                    <div class="col-xl-6 col-md-12 col-xs-12">
-                        <div class="news-item news-item-sm">
-                            <a href="blog-details.html" class="news-img-link">
-                                <div class="news-item-img">
-                                    <img class="resp-img"
-                                        src="{{ asset('assets/images/slider/slider-1.jpg') }}" alt="blog image">
-                                </div>
-                            </a>
-                            <div class="news-item-text">
-                                <a href="blog-details.html">
-                                    <h3>Latest Business News</h3>
-                                </a>
-                                <span class="date">Jun 23, 2020 &nbsp;/&nbsp; By Admin</span>
-                                <div class="news-item-descr">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                                    </p>
-                                </div>
-                                <div class="news-item-bottom">
-                                    <a href="blog-details.html" class="news-link">Read more...</a>
-                                    <ul class="action-list">
-                                        <li class="action-item"><i class="fa fa-heart"></i> <span>306</span>
-                                        </li>
-                                        <li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-                                        <li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-item news-item-sm mb">
-                            <a href="blog-details.html" class="news-img-link">
-                                <div class="news-item-img">
-                                    <img class="resp-img" src="{{ asset('assets/images/blog/b-2.jpg') }}"
-                                        alt="blog image">
-                                </div>
-                            </a>
-                            <div class="news-item-text">
-                                <a href="blog-details.html">
-                                    <h3>Latest Business News</h3>
-                                </a>
-                                <span class="date">Jun 23, 2020 &nbsp;/&nbsp; By Admin</span>
-                                <div class="news-item-descr">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                                    </p>
-                                </div>
-                                <div class="news-item-bottom">
-                                    <a href="blog-details.html" class="news-link">Read more...</a>
-                                    <ul class="action-list">
-                                        <li class="action-item"><i class="fa fa-heart"></i> <span>306</span>
-                                        </li>
-                                        <li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-                                        <li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-12 col-xs-12">
-                        <div class="news-item news-item-sm">
-                            <a href="blog-details.html" class="news-img-link">
-                                <div class="news-item-img">
-                                    <img class="resp-img" src="{{ asset('assets/images/blog/b-3.jpg') }}"
-                                        alt="blog image">
-                                </div>
-                            </a>
-                            <div class="news-item-text">
-                                <a href="blog-details.html">
-                                    <h3>Latest Business News</h3>
-                                </a>
-                                <span class="date">Jun 23, 2020 &nbsp;/&nbsp; By Admin</span>
-                                <div class="news-item-descr">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                                    </p>
-                                </div>
-                                <div class="news-item-bottom">
-                                    <a href="blog-details.html" class="news-link">Read more...</a>
-                                    <ul class="action-list">
-                                        <li class="action-item"><i class="fa fa-heart"></i> <span>306</span>
-                                        </li>
-                                        <li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-                                        <li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-item news-item-sm">
-                            <a href="blog-details.html" class="news-img-link">
-                                <div class="news-item-img">
-                                    <img class="resp-img"
-                                        src="{{ asset('assets/images/slider/slider-3.jpg') }}" alt="blog image">
-                                </div>
-                            </a>
-                            <div class="news-item-text">
-                                <a href="blog-details.html">
-                                    <h3>Latest Business News</h3>
-                                </a>
-                                <span class="date">Jun 23, 2020 &nbsp;/&nbsp; By Admin</span>
-                                <div class="news-item-descr">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                                    </p>
-                                </div>
-                                <div class="news-item-bottom">
-                                    <a href="blog-details.html" class="news-link">Read more...</a>
-                                    <ul class="action-list">
-                                        <li class="action-item"><i class="fa fa-heart"></i> <span>306</span>
-                                        </li>
-                                        <li class="action-item"><i class="fa fa-comment"></i> <span>34</span></li>
-                                        <li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END SECTION BLOG -->
 
     <!-- START SECTION REQUEST -->
     <section class="request" id="quote">

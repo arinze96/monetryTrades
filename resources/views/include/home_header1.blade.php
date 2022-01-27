@@ -25,23 +25,23 @@
             </div>
         </div>
     </div>
-    <div class="header-bottom heading sticky-header" id="heading" style="  background-color: #368add;">
+    <div class="header-bottom heading sticky-header" id="heading" style="  background-color: #03a9f5;">
         <div class="container">
             <!-- STAR MOBILE LOGO -->
             <a href="{{route('app.home')}}" class="logo">
                 <img src="{{asset('assets/images/background/MT_Trans_2.png')}}" alt="businesspro">
             </a>
             <!-- END MOBILE LOGO -->
-            <div class="get-quote hidden-lg-down">
+            <div class="get-quote hidden-lg-down" style="background-color: #0f1341;">
                 <a data-scroll href="{{route('user.contact')}}">
                     <p>CONTACT US</p>
                 </a>
             </div>
             <button type="button" class="search-button" data-toggle="collapse" data-target="#bloq-search" aria-expanded="false">
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true" style="color: #0f1341;"></i>
             </button>
             <button type="button" class="button-menu hidden-lg-up" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-bars" aria-hidden="true" style="color: #0f1341;"></i>
             </button>
 
             <form action="#" id="bloq-search" class="collapse">
