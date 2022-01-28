@@ -7,7 +7,7 @@
                         <a href="{{route('app.home')}}" class="logo">
                             <img src="{{asset('assets/images/background/MT_Trans_2.png')}}" alt="businesspro">
                         </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p>
+                        {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p> --}}
                     </div>
                     <div class="contactus">
                         <ul>
@@ -17,16 +17,16 @@
                                     <p class="in-p">95 South Park Avenue, Switzerland</p>
                                 </div>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <div class="info">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
                                     <p class="in-p">+456 875 369 208</p>
                                 </div>
-                            </li>
+                            </li> --}}
                             <li>
                                 <div class="info">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    <p class="in-p ti">support@gobiz.com</p>
+                                    <p class="in-p ti">support@monetarytrades.com</p>
                                 </div>
                             </li>
                         </ul>
@@ -110,7 +110,7 @@
     </div>
     <div class="second-footer">
         <div class="container">
-            <p>Code-Theme. ©2022 All rights reserved. </p>
+            <p>Monetarytrades. ©2022 All rights reserved. </p>
             <ul class="netsocials">
                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

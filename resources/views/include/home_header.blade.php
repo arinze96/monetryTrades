@@ -74,20 +74,20 @@
                             </div>
                         </li>
                     </a>
-                    <a href="{{route('what-we-offer')}}" aria-expanded="false">
+                    {{-- <a href="{{route('what-we-offer')}}" aria-expanded="false">
                         <li class="hidden-lg-up">
                             <div class="po">
                                 WHAT WE OFFER
                             </div>
                         </li>
-                    </a>
-                    <a href="{{route('risk-management')}}" aria-expanded="false">
+                    </a> --}}
+                    {{-- <a href="{{route('risk-management')}}" aria-expanded="false">
                         <li class="hidden-lg-up">
                             <div class="po">
                                 RISK MANAGEMENT
                             </div>
                         </li>
-                    </a>
+                    </a> --}}
                     <a href="{{route('faq')}}" aria-expanded="false">
                         <li class="hidden-lg-up">
                             <div class="po">
