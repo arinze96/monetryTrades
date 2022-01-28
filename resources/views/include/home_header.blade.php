@@ -54,22 +54,56 @@
             <nav id="main-menu" class="collapse">
                 <ul>
                     <!-- STAR COLLAPSE MOBILE MENU -->
-                    <li class="hidden-lg-up">
-                        <div class="po">
-                            <a data-toggle="collapse" href="{{route('app.home')}}" aria-expanded="false">HOME</a>
-                        </div>
-
-                    </li>
+                    <a href="{{route('app.home')}}"  aria-expanded="false" >
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                HOME
+                            </div>
+                        </li>
+                    </a>
+                                       
                     <!-- END COLLAPSE MOBILE MENU -->
                     <li class="dropdown hidden-md-down">
                         <a class="" data-toggle="" aria-haspopup="true" aria-expanded="false" href="{{route('app.home')}}">HOME</a>
                     </li>
                     <!-- STAR COLLAPSE MOBILE MENU -->
-                    <li class="hidden-lg-up">
-                        <div class="po">
-                            <a data-toggle="collapse" href="{{route('company')}}" aria-expanded="false">COMPANY</a>
-                        </div>
-                        <div class="collapse" id="about">
+                    <a href="{{route('about')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                ABOUT
+                            </div>
+                        </li>
+                    </a>
+                    <a href="{{route('what-we-offer')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                WHAT WE OFFER
+                            </div>
+                        </li>
+                    </a>
+                    <a href="{{route('risk-management')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                RISK MANAGEMENT
+                            </div>
+                        </li>
+                    </a>
+                    <a href="{{route('faq')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                FREQUENTLY ASKED QUESTIONS
+                            </div>
+                        </li>
+                    </a>
+                    <a href="{{route('team')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                OUR TEAM
+                            </div>
+                        </li>
+                    </a>
+                    
+                        {{-- <div class="collapse" id="about">
                             <div class="card card-block">
                                 <a class="dropdown-item" href="about">About Us</a>
                                 <a class="dropdown-item" href="{{route('what-we-offer')}}">What We Offer</a>
@@ -78,8 +112,7 @@
                                 <a class="dropdown-item" href="{{route('team')}}">Our Team</a>
 
                             </div>
-                        </div>
-                    </li>
+                        </div> --}}
                     <!-- END COLLAPSE MOBILE MENU -->
                     <li class="dropdown hidden-md-down">
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('company')}}">COMPANY</a>
@@ -92,11 +125,29 @@
                         </div>
                     </li>
                     <!-- STAR COLLAPSE MOBILE MENU -->
-                    <li class="hidden-lg-up">
-                        <div class="po">
-                            <a data-toggle="collapse" href="{{route('investments')}}" aria-expanded="false">INVESTMENTS</a>
-                        </div>
-                        <div class="collapse" id="services">
+                    <a href="{{route('cryptocurrency-plans')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                INVESTMENT PLANS
+                            </div>
+                        </li>
+                    </a>
+                    <a href="{{route('real_estate')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                REAL ESTATE
+                            </div>
+                        </li>
+                    </a>
+                    <a href="{{route('children-account')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                CHILDREN ACCOUNT
+                            </div>
+                        </li>
+                    </a>
+                    
+                        {{-- <div class="collapse" id="services">
                             <div class="card card-block">
                                 <a class="dropdown-item" href="{{route('real_estate')}}">Real Estate</a>
                                 <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a>
@@ -104,8 +155,7 @@
                                 <a class="dropdown-item" href="{{route('retirement')}}">Retirement</a>
                                 <a class="dropdown-item" href="{{route('children-account')}}">Children Account</a>
                             </div>
-                        </div>
-                    </li>
+                        </div> --}}
                     <!-- END COLLAPSE MOBILE MENU -->
                     <li class="dropdown hidden-md-down">
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('investments')}}">INVESTMENTS</a>
@@ -118,26 +168,29 @@
                         </div>
                     </li>
                     <!-- STAR COLLAPSE MOBILE MENU -->
-                    <li class="hidden-lg-up">
-                        <div class="po">
-                            <a data-toggle="" href="{{route('charity')}}" aria-expanded="false">CHARITY</a>
-                        </div>
+                    <a href="" data-toggle="" href="{{route('charity')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po" style="color: black">
+                                CHARITY
+                            </div>
+                        </li>
+                    </a>
+                   
 
-                    </li>
                     <!-- END COLLAPSE MOBILE MENU -->
                     <li class="dropdown hidden-md-down">
                         <a class="" aria-haspopup="true" aria-expanded="false" href="{{route('charity')}}">CHARITY</a>
 
                     </li>
                     <!-- STAR COLLAPSE MOBILE MENU -->
-                    <li class="hidden-lg-up">
-                        <div class="po">
-                            <a data-toggle="" href="{{route('user.login')}}" aria-expanded="false">LOGIN</a>
-                        </div>
-                        <div class="" id="blog">
-
-                        </div>
-                    </li>
+                    <a data-toggle="" href="{{route('user.login')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                LOGIN
+                            </div>
+                        </li>
+                    </a>
+                   
                     <!-- END COLLAPSE MOBILE MENU -->
                     <li class="dropdown hidden-md-down">
                         <a class="" aria-haspopup="true" aria-expanded="false" href="{{route('user.login')}}">LOGIN</a>

@@ -57,7 +57,7 @@
 						As a parent, We want the best for our kids. We want to do everything Possible to set them up for success.
 					</p>
 					<p>
-						We at Blueglide Capital have spoken with many parents and grandparents who have one simple question: How can I invest in my child or grandchild’s future? Knowing the power of compound interest, some couple wrote us that they wanted to kick-start their son’s retirement savings. Others just want to help their kids get a college diploma without taking on any debt.
+						We at Monetarytrades have spoken with many parents and grandparents who have one simple question: How can I invest in my child or grandchild’s future? Knowing the power of compound interest, some couple wrote us that they wanted to kick-start their son’s retirement savings. Others just want to help their kids get a college diploma without taking on any debt.
 					</p>
 				</div>
 			</div> <br> <br>

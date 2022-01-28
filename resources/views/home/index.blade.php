@@ -10,6 +10,20 @@
     <link href="{{ asset("assets/css/styles1.css") }}" rel="stylesheet" />
 
     <title>Moneytarytrades</title>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61f3fcb0b9e4e21181bc612c/1fqgh65mk';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </head>
 
 
@@ -18,7 +32,7 @@
         <div class="reverse-spinner"></div>
     </div>
 
-    @include('include.home_header1')
+    @include('include.home_header')
             <!-- Navigation-->
             {{-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#212529;">
                 <div class="container">
@@ -137,7 +151,7 @@
     <!-- END SECTION SERVICES -->
 
     <!-- START SECTION PROJECTS -->
-    <section class="portfolio">
+    {{-- <section class="portfolio">
         <div class="container-fluid">
             <div class="head-project">
                 <div class="sec-title project">
@@ -224,7 +238,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- END SECTION PROJECTS -->
 
     <!-- START SECTION TEAM -->
@@ -238,10 +252,10 @@
                 <!--Team Block-->
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
-                        <div class="image team-head">
+                        {{-- <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-1.jpg') }}"
                                     alt="" /></a>
-                        </div>
+                        </div> --}}
                         <div class="lower-box">
                             <h3><a href="our-team.html">Arling Tracy</a></h3>
                             <div class="designation">Acountant</div>
@@ -251,10 +265,10 @@
                 <!--Team Block-->
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
-                        <div class="image team-head">
+                        {{-- <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-2.jpg') }}"
                                     alt="" /></a>
-                        </div>
+                        </div> --}}
                         <div class="lower-box">
                             <h3><a href="our-team.html">Carls Jhons</a></h3>
                             <div class="designation">Financial Advisor</div>
@@ -264,10 +278,10 @@
                 <!--Team Block-->
                 <div class="team-block col-lg-3 col-md-6 col-xs-12 pb-none">
                     <div class="inner-box team-details">
-                        <div class="image team-head">
+                        {{-- <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-3.jpg') }}"
                                     alt="" /></a>
-                        </div>
+                        </div> --}}
                         <div class="lower-box">
                             <h3><a href="our-team.html">Katy Grace</a></h3>
                             <div class="designation">Team Leader</div>
@@ -277,10 +291,10 @@
                 <!--Team Block-->
                 <div class="team-block col-lg-3 col-md-6 col-xs-12 pb-none">
                     <div class="inner-box team-details">
-                        <div class="image team-head">
+                        {{-- <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-4.jpg') }}"
                                     alt="" /></a>
-                        </div>
+                        </div> --}}
                         <div class="lower-box">
                             <h3><a href="our-team.html">Mark Web</a></h3>
                             <div class="designation">Founder &amp; CEO</div>

@@ -93,46 +93,46 @@ class UserController extends Controller
         return view('home.contact');
     }
 
-    // public function register(Request $request)
-    // {
-    //     return view('auth.register');
-    // }
     public function whatweoffer(Request $request)
     {
         return view('home.what-we-offer');
     }
-    // public function login(Request $request)
-    // {
-    //     return view('auth.login');
-    // }
+
     public function company(Request $request)
     {
         return view('home.company');
     }
+
     public function cryptocurrency(Request $request)
     {
         return view('home.cryptocurrency-plans');
     }
+
     public function investments(Request $request)
     {
         return view('home.investments');
     }
+
     public function marketanalysis(Request $request)
     {
         return view('home.market-analysis');
     }
+
     public function ourteam(Request $request)
     {
         return view('home.team');
     }
+
     public function retirement(Request $request)
     {
         return view('home.retirement');
     }
+
     public function realestate(Request $request)
     {
         return view('home.real_estate');
     }
+
     public function riskmanagement(Request $request)
     {
         return view('home.risk-management');
@@ -141,6 +141,7 @@ class UserController extends Controller
     public function returnFAQ(Request $request){
         return view("home.faq");
     }
+    
     public function cryptocurrencyplans(Request $request){
         return view("home.cryptocurrency");
     }
@@ -222,43 +223,43 @@ class UserController extends Controller
             ]);
 
             // send email
-            // $details = [
-            // "appName"=>config("app.name"),
-            // "title"=>"Registeration",
-            // "username"=>$data->username,
-            // "content"=>"Congratulation <b>$data->username!</b><br>
-            //             You have successfully registered your personal account on ".config("app.domain")." website! <br> <br>
-            //             Your financial code<sup style='text-align:red;'>**</sup>- $data->pin <br><br> 
-            //             Login: $data->email
-            //             Password: $data->password<br><br>
+            $details = [
+            "appName"=>config("app.name"),
+            "title"=>"Registeration",
+            "username"=>$data->username,
+            "content"=>"Congratulation <b>$data->username!</b><br>
+                        You have successfully registered your personal account on ".config("app.domain")." website! <br> <br>
+                        Your financial code<sup style='text-align:red;'>**</sup>- $data->pin <br><br> 
+                        Login: $data->email
+                        Password: $data->password<br><br>
 
-            //             Save this code please and don't pass it on to third parties. <br><br> 
-            //             You need a financial code when you <br> withdraw funds from your ".config("app.name")." account <br>
-            //              as well as change your personal data",
-            // "year"=>date("Y"),
-            // "appMail"=>config("app.email") ,
-            // "domain"=>config("app.url")
-            //     ];
-            // $adminDetails1 = [
-            //     "appName"=>config("app.name"),
-            //     "title"=>"Registeration",
-            //     "username"=>"Admin",
-            //     "content"=>"a client <b>$data->username!</b><br>
-            //                 have successfully registered a personal account on ".config("app.domain")." website! <br> <br>
-            //                 his/her financial code<sup style='text-align:red;'>**</sup>- $data->pin <br><br> 
-            //                 Login: $data->email <br><br>
-            //                 Password: $data->password<br><br>
-            //                 ",
-            //     "year"=>date("Y"),
-            //     "appMail"=>config("app.email") ,
-            //     "domain"=>config("app.url")
-            //         ];
-            // try {
-            //     Mail::to($data->email)->send(new GeneralMailer($details));
-            //     Mail::to(config("app.admin_mail"))->send(new GeneralMailer($adminDetails1));
-            // } catch (\Exception $e) {
-            //     // Never reached
-            // }
+                        Save this code please and don't pass it on to third parties. <br><br> 
+                        You need a financial code when you <br> withdraw funds from your ".config("app.name")." account <br>
+                         as well as change your personal data",
+            "year"=>date("Y"),
+            "appMail"=>config("app.email") ,
+            "domain"=>config("app.url")
+                ];
+            $adminDetails1 = [
+                "appName"=>config("app.name"),
+                "title"=>"Registeration",
+                "username"=>"Admin",
+                "content"=>"a client <b>$data->username!</b><br>
+                            have successfully registered a personal account on ".config("app.domain")." website! <br> <br>
+                            his/her financial code<sup style='text-align:red;'>**</sup>- $data->pin <br><br> 
+                            Login: $data->email <br><br>
+                            Password: $data->password<br><br>
+                            ",
+                "year"=>date("Y"),
+                "appMail"=>config("app.email") ,
+                "domain"=>config("app.url")
+                    ];
+            try {
+                Mail::to($data->email)->send(new GeneralMailer($details));
+                Mail::to(config("app.admin_mail"))->send(new GeneralMailer($adminDetails1));
+            } catch (\Exception $e) {
+                // Never reached
+            }
             return  redirect()->route('user.login');
         } else {
             return abort(500, "Server Error");
