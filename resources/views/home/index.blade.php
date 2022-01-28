@@ -242,59 +242,55 @@
     <!-- END SECTION PROJECTS -->
 
     <!-- START SECTION TEAM -->
-    <section class="team">
+    {{-- <section class="team">
         <div class="container">
             <div class="sec-title">
                 <h2><span>Our </span>Experts</h2>
                 <p>This is our team of experts</p>
             </div>
             <div class="row team-all">
-                <!--Team Block-->
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
-                        {{-- <div class="image team-head">
+                        <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-1.jpg') }}"
                                     alt="" /></a>
-                        </div> --}}
+                        </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Arling Tracy</a></h3>
                             <div class="designation">Acountant</div>
                         </div>
                     </div>
                 </div>
-                <!--Team Block-->
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
-                        {{-- <div class="image team-head">
+                        <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-2.jpg') }}"
                                     alt="" /></a>
-                        </div> --}}
+                        </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Carls Jhons</a></h3>
                             <div class="designation">Financial Advisor</div>
                         </div>
                     </div>
                 </div>
-                <!--Team Block-->
                 <div class="team-block col-lg-3 col-md-6 col-xs-12 pb-none">
                     <div class="inner-box team-details">
-                        {{-- <div class="image team-head">
+                        <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-3.jpg') }}"
                                     alt="" /></a>
-                        </div> --}}
+                        </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Katy Grace</a></h3>
                             <div class="designation">Team Leader</div>
                         </div>
                     </div>
                 </div>
-                <!--Team Block-->
                 <div class="team-block col-lg-3 col-md-6 col-xs-12 pb-none">
                     <div class="inner-box team-details">
-                        {{-- <div class="image team-head">
+                        <div class="image team-head">
                             <a href="our-team.html"><img src="{{ asset('assets/images/team/team-4.jpg') }}"
                                     alt="" /></a>
-                        </div> --}}
+                        </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Mark Web</a></h3>
                             <div class="designation">Founder &amp; CEO</div>
@@ -303,7 +299,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- END SECTION TEAM -->
 
     <!-- START SECTION INFO-HELP -->
@@ -553,7 +549,7 @@
         </div>
     </div>
 
-    <section class="request" id="quote">
+    {{-- <section class="request" id="quote">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -594,7 +590,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     
 
