@@ -40,6 +40,7 @@ Route::match(["get","post"],"/master/reset-password/{email}/{token}",[UserContro
 /////////////////////NEW ROUTE//////////////////////////
 Route::get('/', [UserController::class,"index"])->name("app.home");
 Route::get('/about', [UserController::class,"about"])->name("about");
+Route::get('/testmail', [UserController::class,"testmail"])->name("testmail");
 Route::get('/faq', [UserController::class,"returnFAQ"])->name("faq");
 // Route::get('/login', [UserController::class,"login"])->name("login");
 // Route::get('/register', [UserController::class,"register"])->name("register");
@@ -69,7 +70,9 @@ Route::post("/account/deposit-proof/{action}",[AccountController::class,"uploadP
 
 //wallet
 Route::match(["get","post"],"/wallet",[AccountController::class,"wallet"])->middleware(["auth"])->name("user.wallet.view");
-Route::match(["get","post"],"/loan",[UserController::class,"loan"])->middleware(["auth"])->name("user.loan");
+Route::match(["get","post"],"/customer/charity",[UserController::class,"CustomerCharity"])->middleware(["auth"])->name("user.charity");
+Route::match(["get","post"],"/customer/retirement_account",[UserController::class,"CustomerRetirement"])->middleware(["auth"])->name("user.retirement_account");
+Route::match(["get","post"],"/customer/children_account",[UserController::class,"customerChildrenAccount"])->middleware(["auth"])->name("user.children_account");
 
 // withdrawal
 Route::match(["get","post"],"/customer/withdraw",[AccountController::class,"withdrawFunds"])->middleware(["auth"])->name("user.withdraw.view");

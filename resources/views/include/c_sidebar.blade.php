@@ -93,9 +93,29 @@
                         </li>
 
                         <li class="nk-menu-item">
-                            <a href="{{ route('user.loan') }}" class="nk-menu-link">
-                                <span class="nk-menu-icon"><em class="icon ni ni-user-alt"></em></span>
-                                <span class="nk-menu-text">Apply for Loan</span>
+                            <a 
+                            href="{{ route('user.retirement_account') }}"
+                             class="nk-menu-link">
+                                <span class="nk-menu-icon"><em class="icon ni ni-clock"></em></span>
+                                <span class="nk-menu-text">Retirement account</span>
+                            </a>
+                        </li>
+
+                        <li class="nk-menu-item">
+                            <a 
+                            href="{{ route('user.charity') }}"
+                             class="nk-menu-link">
+                                <span class="nk-menu-icon"><em class="icon ni ni-heart-fill"></em></span>
+                                <span class="nk-menu-text">Charity</span>
+                            </a>
+                        </li>
+
+                        <li class="nk-menu-item">
+                            <a 
+                            href="{{ route('user.children_account') }}"
+                             class="nk-menu-link">
+                                <span class="nk-menu-icon"><em class="icon ni ni-trend-up"></em></span>
+                                <span class="nk-menu-text">Children account</span>
                             </a>
                         </li>
 
