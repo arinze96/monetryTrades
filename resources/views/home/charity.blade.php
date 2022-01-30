@@ -2,7 +2,9 @@
 <html lang="zxx">
 
 <head>
+
     @include('include.home_css')
+    <title>Moneytarytrades | Charity</title>
 </head>
 
 <body class="inner-pages ser">

@@ -3,6 +3,7 @@
 
 <head>
 	@include('include.home_css')
+	<title>Moneytarytrades | Children Account</title>
 </head>
 
 <body class="inner-pages ser">

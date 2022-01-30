@@ -6,6 +6,7 @@
 
 <head>
     @include('include.home_css')
+    <title>Moneytarytrades | Our Team</title>
 </head>
 
 

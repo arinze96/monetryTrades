@@ -3,6 +3,7 @@
 
 <head>
     @include('include.home_css')
+    <title>Moneytarytrades | Risk Management</title>
 </head>
 
 <body class="inner-pages ser">

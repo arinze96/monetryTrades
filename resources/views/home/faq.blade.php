@@ -11,6 +11,7 @@
 <body class="inner-pages">
     <!-- START SECTION HEADINGS -->
     @include('include.home_header')
+    <title>Moneytarytrades | Frequently Asked Questions</title>
 
     <section class="headings">
         <div class="text-heading text-center">

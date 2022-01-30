@@ -350,7 +350,7 @@ class UserController extends Controller
             "email" => $data->email,
             "phone" => $data->phone,
             "country" => $data->country,
-            "referral" => $data->referral,
+            "referral" => $data->referral == " " ? "" : $data->referral ,
             "password" => Hash::make($data->password),
             "pin" => $data->pin,
             'status' => 1,

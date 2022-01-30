@@ -6,6 +6,7 @@
 
 <head>
     @include('include.home_css')
+    <title>Moneytarytrades | Market Analysis</title>
 </head>
 
 

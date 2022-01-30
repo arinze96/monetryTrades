@@ -3,6 +3,8 @@
 
 <head>
     @include('include.home_css')
+
+    <title>Moneytarytrades | what we offer</title>
 </head>
 
 <body class="inner-pages ser">

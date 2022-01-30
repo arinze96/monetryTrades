@@ -3,6 +3,7 @@
 
 <head>
     @include('include.home_css')
+    <title>Moneytarytrades | Contact</title>
     <style>
         body {
             background-color: #000;

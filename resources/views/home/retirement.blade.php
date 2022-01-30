@@ -5,6 +5,7 @@
 <!-- Mirrored from code-theme.com/html/gobiz/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jan 2022 10:25:48 GMT -->
 <head>
 	@include('include.home_css')
+	<title>Moneytarytrades | retirement</title>
 </head>
 
 <body class="inner-pages ser">

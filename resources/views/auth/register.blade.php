@@ -104,16 +104,16 @@
                         @enderror
                     </div>
 
-                    <div class="wrap-input100 validate-input m-b-16">
+                    <div class="wrap-input100  m-b-16">
                         <input class="input100" type="text" value="{{ !empty($ref) ? $ref : old('referral') }}" name="referral"
                             placeholder="Referral ID">
-                        <span class="focus-input100"></span>
+                    </div>
+                    {{-- <span class="focus-input100"></span> --}}
                         @error('referral')
                             <p class="text-danger">{{ $message }} </p>
                         @enderror
-                    </div>
 
-                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter password">
+                    <div class="wrap-input100  m-b-16" data-validate="Please enter password">
                         <input class="input100" type="password" value="{{ old('password') }}" name="password"
                             placeholder="Password">
                         <span class="focus-input100"></span>
