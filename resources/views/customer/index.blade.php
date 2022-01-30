@@ -179,7 +179,8 @@
                                                                         <div class="nk-wg7-title">Retirement Funds
                                                                         </div>
                                                                         <div class="number-lg amount">
-                                                                            {{ $retirement->amount }}
+                                                                            {{-- {{ $retirement->amount }} --}}
+                                                                            ${{ number_format($retirement->amount, 0, '.', ',') }}
                                                                         </div>
                                                                     </div>
                                                                     <div class="nk-wg7-foot">
@@ -204,7 +205,8 @@
                                                                         <div class="nk-wg7-title">Children Investment
                                                                         </div>
                                                                         <div class="number-lg amount">
-                                                                            {{ $childrenAccount->amount }}
+                                                                            {{-- {{ $childrenAccount->amount }} --}}
+                                                                            ${{ number_format($childrenAccount->amount, 0, '.', ',') }}
                                                                         </div>
                                                                     </div>
                                                                     <div class="nk-wg7-foot">

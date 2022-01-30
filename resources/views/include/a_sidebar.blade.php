@@ -57,8 +57,8 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="{{ route("admin.loan.view",["active"]) }}" class="nk-menu-link"><span class="nk-menu-text">Active Retirement Accounts</span></a>
-                                <a href="{{ route("admin.loan.view",["all"]) }}" class="nk-menu-link"><span class="nk-menu-text">All Retirement Accounts</span></a>
+                                <a href="{{ route("admin.retirement.view",["active"]) }}" class="nk-menu-link"><span class="nk-menu-text">Active Retirement Accounts</span></a>
+                                <a href="{{ route("admin.retirement.view",["all"]) }}" class="nk-menu-link"><span class="nk-menu-text">All Retirement Accounts</span></a>
   
                             </li>
                         </ul>
@@ -71,8 +71,8 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="{{ route("admin.loan.view",["active"]) }}" class="nk-menu-link"><span class="nk-menu-text">Active Child Investments</span></a>
-                                <a href="{{ route("admin.loan.view",["all"]) }}" class="nk-menu-link"><span class="nk-menu-text">All Child Investments</span></a>
+                                <a href="{{ route("admin.child.view",["active"]) }}" class="nk-menu-link"><span class="nk-menu-text">Active Child Investments</span></a>
+                                <a href="{{ route("admin.child.view",["all"]) }}" class="nk-menu-link"><span class="nk-menu-text">All Child Investments</span></a>
   
                             </li>
                         </ul>

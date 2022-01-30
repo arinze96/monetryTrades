@@ -6,7 +6,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/background/MT_Trans_Vector.png')}}">
 <link rel="stylesheet" href="{{ asset("assets/css/dashboard/dashlite.css") }}">
 <link id="skin-default" rel="stylesheet" href="{{ asset("assets/css/dashboard/theme.css") }}">
-<link rel="shortcut icon" type="image/png" href="{{ asset("assets/images/home/logo/ProStack_favicon.png") }}"/>
+{{-- <link rel="shortcut icon" type="image/png" href="{{ asset("assets/images/home/logo/ProStack_favicon.png") }}"/> --}}
 <meta name="description" content=""/>
   <meta name="keywords" content="">
   <meta name="csrf-token" content="{{ csrf_token() }}" />

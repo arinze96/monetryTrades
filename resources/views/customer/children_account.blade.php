@@ -98,16 +98,16 @@
                                  <div class="form-control-wrap">
                                    <select name="amount" id="strategySelect" class="form-control">
                                     <option value="" disabled selected hidden>Amount</option>
-                                    <option value="$5,000">$5,000</option>
-                                    <option value="$7,000">$7,000</option>
-                                    <option value="$10,000">$10,000</option>
-                                    <option value="$15,000">$15,000</option>
-                                    <option value="$25,000">$25,000</option>
-                                    <option value="$35,000">$35,000</option>
-                                    <option value="$50,000">$50,000</option>
-                                    <option value="$100,000">$100,000</option>
-                                    <option value="$500,000">$500,000</option>
-                                    <option value="$1,000,000">$1,000,000</option>
+                                    <option value="5000">$5,000</option>
+                                    <option value="7000">$7,000</option>
+                                    <option value="10000">$10,000</option>
+                                    <option value="15000">$15,000</option>
+                                    <option value="25000">$25,000</option>
+                                    <option value="35000">$35,000</option>
+                                    <option value="50000">$50,000</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="1000000">$1,000,000</option>
                                     
                                 </select>
                                  </div>

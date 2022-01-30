@@ -113,8 +113,8 @@
                 </div>
                 <div class="col-lg-4 col-md-12 cell cel-3">
                     <img src="{{ asset('assets/images/info/img-3.png') }}" width="70" alt="">
-                    <h3>Global Business</h3>
-                    <p>Our team of Experts are successful investment fund managers on the best financial markets across the globe</p>
+                    <h3>Children Account Investment</h3>
+                    <p>Our team of Experts are successful investment fund managers on the best financial investment for your kids future </p>
                     <div class="inf-btn">
 
                     </div>
@@ -131,7 +131,7 @@
                 </div>
                 <div class="col-lg-4 col-md-12 cell cel-5">
                     <img src="{{ asset('assets/images/info/img-5.png') }}" width="70" alt="">
-                    <h3>Humanitarian Fund Raising</h3>
+                    <h3>Charity</h3>
                     <p>We raise funds for humaritarian purposes</p>
                     <div class="inf-btn">
 
@@ -139,8 +139,8 @@
                 </div>
                 <div class="col-lg-4 col-md-12 cell cel-6">
                     <img src="{{ asset('assets/images/info/img-6.png') }}" width="70" alt="">
-                    <h3>Finance Advisor</h3>
-                    <p>Our team of financial experts advices help advise you on how to manage your portfolio</p>
+                    <h3>Retirement Fund Investment</h3>
+                    <p>Our team of financial experts advices help advise you on how to manage your portfolio and invest in a high return market for a better future</p>
                     <div class="inf-btn">
 
                     </div>

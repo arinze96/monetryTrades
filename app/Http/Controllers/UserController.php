@@ -1116,6 +1116,280 @@ class UserController extends Controller
         }
     }
 
+    public function retirementAdmin(Request $request, $name, $id = null)
+    {
+        if ($request->method() == "GET") {
+            $user = $request->user();
+            if (($name == "active") || ($name == "all")) {
+                $retirement = ($name == "active") ?
+
+                    Retirement::where("status", "=", 1)->orderBy("created_at", "desc")->limit(10)->get() :
+
+                    Retirement::where("status", "=", 0)->orderBy("created_at", "desc")->limit(10)->get();
+
+                return view("admin.$name-retirement", ["retirement" => $retirement]);
+            } else {
+                $retirement = DB::table('retirements')->get()->first();
+                // dd($charities); 
+                return view("admin.$name-retirement", ["retirement" => $retirement]);
+            }
+        }
+
+        if ($name == "edit") {
+            $retirement = DB::table('retirements')->get();
+            // dd($charities);
+            $validated = $request->validate([
+                // "message" => ["required"],
+                "amount" => ["required", "numeric"],
+                "status" => ["required"]
+            ]);
+
+            $data = (object) $request->all();
+            $retirement = Retirement::where("id", "=", $id)->orderBy("created_at", "desc")->get()->first();
+            $result = Retirement::where("id", "=", $id)->update([
+                // 'message' => $data->message,
+                'amount' => $data->amount,
+                'status' => $data->status
+            ]);
+
+            if ($retirement->status == 1) {
+                return view("admin.$name-retirement", ["retirement" => $retirement, "error" => "You can't role back request after approval"]);
+            }
+
+            if ($result) {
+                return view("admin.$name-retirement", ["retirement" => $retirement, "success" => "Retirement Funds Deposit Request Data Updated Successfully"]);
+            } else {
+                return view("admin.$name-retirement", ["retirement" => $retirement, "error" => "retirement funds data failed to update"]);
+            }
+
+        } elseif ($name == "delete") {
+            $retirement = Retirement::where("id", "=", $id)->get()->first();
+            $retirement->delete();
+            echo json_encode(["success" => true]);
+        } elseif ($name == "approve") {
+            $retirement = Retirement::where("id", "=", $id)->get()->first();
+            // dd($retirement);
+            if ($retirement->status == 1) {
+                return response()->json(["error" => true, "message" => "This request has been approved previously"]);
+            }
+
+            Retirement::where("id", "=", $id)->update([
+                'status' => 1,
+            ]);
+
+            $user = User::where("id", "=", $retirement->user_id)->get()->first();
+            $message_amount = $retirement->amount;
+            $details = [
+                "appName" => config("app.name"),
+                "title" => "Retirement Funds Deposit Request",
+                "username" => $user->username,
+                "content" => "Hello <b>$user->username!</b><br><br>
+                            Your Retirement Funds Deposit Request of $message_amount has been approved successfully.<br>",
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+            $admindetails4 = [
+                "appName" => config("app.name"),
+                "title" => "Retirement Funds Deposit Request",
+                "username" => "Admin",
+                "content" => "Hello <b>$user->username!</b><br><br>
+                                Your Retirement Funds Deposit Request of $message_amount  has been approved successfully.<br>",
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+            try {
+                Mail::to($user->email)->send(new GeneralMailer($details));
+                Mail::to(config("app.admin_email"))->send(new GeneralMailer($admindetails4));
+            } catch (\Exception $e) {
+                // Never reached
+            }
+
+
+            return response()->json(["success" => true, "message" => "Retirement Funds Deposit Request successfully approved"]);
+        } 
+        elseif ($name == "decline") {
+            $retirement = Retirement::where("id", "=", $id)->get()->first();
+            if ($retirement->status == 3) {
+                return response()->json(["error" => true, "message" => "This request has been cancled previously"]);
+            }
+            Retirement::where("id", "=", $id)->update([
+                'status' => 3,
+            ]);
+
+
+            $user = User::where("id", "=", $retirement->user_id)->get()->first();
+            $message_amount = $retirement->amount;
+            $details = [
+                "appName" => config("app.name"),
+                "title" => "Donation Declined",
+                "username" => $user->username,
+                "content" => "Hello <b>$user->username!</b><br><br>
+                            Your Donation Request of $message_amount has been cancled. <br><br> This is due to unverified evidence or proof of payment. <br><br> Please chat our support team for proper verifiation or mail us at " . config("app.email"),
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+            $admindetails5 = [
+                "appName" => config("app.name"),
+                "title" => "Charity Donation",
+                "username" => "Admin",
+                "content" => "You cancelled <b>$message_amount !</b><br><br>
+                                charity donation of $user->username <br><br> due to unverified evidence or proof of payment. " . config("app.email"),
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+
+            try {
+                Mail::to($user->email)->send(new GeneralMailer($details));
+                Mail::to(config("app.admin_mail"))->send(new GeneralMailer($admindetails5));
+            } catch (\Exception $e) {
+                // Never reached
+            }
+
+            return response()->json(["success" => true, "message" => "Retirement Fund Deposit Report successfully cancled"]);
+        }
+    }
+
+    public function childAdmin(Request $request, $name, $id = null)
+    {
+        if ($request->method() == "GET") {
+            $user = $request->user();
+            if (($name == "active") || ($name == "all")) {
+                $child = ($name == "active") ?
+
+                    ChildrenAccount::where("status", "=", 1)->orderBy("created_at", "desc")->limit(10)->get() :
+
+                    ChildrenAccount::where("status", "=", 0)->orderBy("created_at", "desc")->limit(10)->get();
+
+                return view("admin.$name-childrenAccount", ["child" => $child]);
+            } else {
+                $child = DB::table('children_accounts')->get()->first();
+                // dd($child); 
+                return view("admin.$name-childrenAccount", ["child" => $child]);
+            }
+        }
+
+        if ($name == "edit") {
+            $child = DB::table('children_accounts')->get();
+            // dd($charities);
+            $validated = $request->validate([
+                // "message" => ["required"],
+                "amount" => ["required", "numeric"],
+                "status" => ["required"]
+            ]);
+
+            $data = (object) $request->all();
+            $child = ChildrenAccount::where("id", "=", $id)->orderBy("created_at", "desc")->get()->first();
+            $result = ChildrenAccount::where("id", "=", $id)->update([
+                // 'message' => $data->message,
+                'amount' => $data->amount,
+                'status' => $data->status
+            ]);
+
+            if ($child->status == 1) {
+                return view("admin.$name-childrenAccount", ["child" => $child, "error" => "You can't role back request after approval"]);
+            }
+
+            if ($result) {
+                return view("admin.$name-childrenAccount", ["child" => $child, "success" => "child Funds Deposit Request Data Updated Successfully"]);
+            } else {
+                return view("admin.$name-childrenAccount", ["child" => $child, "error" => "child funds data failed to update"]);
+            }
+
+        } elseif ($name == "delete") {
+            $child = ChildrenAccount::where("id", "=", $id)->get()->first();
+            $child->delete();
+            echo json_encode(["success" => true]);
+        } elseif ($name == "approve") {
+            $child = ChildrenAccount::where("id", "=", $id)->get()->first();
+            // dd($retirement);
+            if ($child->status == 1) {
+                return response()->json(["error" => true, "message" => "This request has been approved previously"]);
+            }
+
+            ChildrenAccount::where("id", "=", $id)->update([
+                'status' => 1,
+            ]);
+
+            $user = User::where("id", "=", $child->user_id)->get()->first();
+            $message_amount = $child->amount;
+            $details = [
+                "appName" => config("app.name"),
+                "title" => "Children Account Funds Deposit Request",
+                "username" => $user->username,
+                "content" => "Hello <b>$user->username!</b><br><br>
+                            Your Children Account Funds Deposit Request of $message_amount has been approved successfully.<br>",
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+            $admindetails4 = [
+                "appName" => config("app.name"),
+                "title" => "Children Account Funds Deposit Request",
+                "username" => "Admin",
+                "content" => "Hello <b>$user->username!</b><br><br>
+                                Your Children Account Funds Deposit Request of $message_amount  has been approved successfully.<br>",
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+            try {
+                Mail::to($user->email)->send(new GeneralMailer($details));
+                Mail::to(config("app.admin_email"))->send(new GeneralMailer($admindetails4));
+            } catch (\Exception $e) {
+                // Never reached
+            }
+
+
+            return response()->json(["success" => true, "message" => "Children Account Funds Deposit Request successfully approved"]);
+        } 
+        elseif ($name == "decline") {
+            $child = ChildrenAccount::where("id", "=", $id)->get()->first();
+            if ($child->status == 3) {
+                return response()->json(["error" => true, "message" => "This request has been cancled previously"]);
+            }
+            ChildrenAccount::where("id", "=", $id)->update([
+                'status' => 3,
+            ]);
+
+
+            $user = User::where("id", "=", $child->user_id)->get()->first();
+            $message_amount = $child->amount;
+            $details = [
+                "appName" => config("app.name"),
+                "title" => "Children Account Funds Deposit Declined",
+                "username" => $user->username,
+                "content" => "Hello <b>$user->username!</b><br><br>
+                            Your Children Account Deposit Request of $message_amount has been cancled. <br><br> This is due to unverified evidence or proof of payment. <br><br> Please chat our support team for proper verifiation or mail us at " . config("app.email"),
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+            $admindetails5 = [
+                "appName" => config("app.name"),
+                "title" => "Children Account Fund Deposit Request",
+                "username" => "Admin",
+                "content" => "You cancelled <b>$message_amount !</b><br><br>
+                                charity donation of $user->username <br><br> due to unverified evidence or proof of payment. " . config("app.email"),
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+
+            try {
+                Mail::to($user->email)->send(new GeneralMailer($details));
+                Mail::to(config("app.admin_mail"))->send(new GeneralMailer($admindetails5));
+            } catch (\Exception $e) {
+                // Never reached
+            }
+
+            return response()->json(["success" => true, "message" => "Children Account Fund Deposit Request successfully cancled"]);
+        }
+    }
+
     /**
      * This is for the admin to view all the withdraw
      */
