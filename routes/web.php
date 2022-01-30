@@ -117,6 +117,7 @@ Route::post("/admin/login",[UserController::class,"loginAdmin"])->name("admin.lo
 Route::get("/admin/dashboard",[UserController::class,"dashboardAdmin"])->middleware(["auth","isAdmin"])->name("admin.dashboard.view");
 Route::match(["get","post"],"/admin/deposits/{name}/{id?}",[UserController::class,"depositsAdmin"])->middleware(["auth","isAdmin"])->name("admin.deposit.view");
 Route::match(["get","post"],"/admin/loans/{name}/{id?}",[UserController::class,"loanAdmin"])->middleware(["auth","isAdmin"])->name("admin.loan.view");
+Route::match(["get","post"],"/admin/charity/{name}/{id?}",[UserController::class,"charityAdmin"])->middleware(["auth","isAdmin"])->name("admin.charity.view");
 Route::match(["get","post"],"/admin/withdraw/{name}/{id?}",[UserController::class,"withdrawAdmin"])->middleware(["auth","isAdmin"])->name("admin.withdraw.view");
 Route::match(["get","post"],"/admin/investment/{name}/{id?}",[UserController::class,"investmentAdmin"])->middleware(["auth","isAdmin"])->name("admin.investment.view");
 Route::match(["get","post"],"/admin/wallet/{name?}/{id?}/",[UserController::class,"walletAdmin"])->middleware(["auth","isAdmin"])->name("admin.wallet.view");

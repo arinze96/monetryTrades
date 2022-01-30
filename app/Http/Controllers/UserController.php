@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Loan;
 use App\Models\Account;
+use App\Models\Retirement;
+use App\Models\Charity;
+use App\Models\ChildrenAccount;
 use App\Models\Plan;
 use App\Models\Activity;
 use App\Models\Transaction;
@@ -24,32 +27,32 @@ class UserController extends Controller
 
     public function testmail(Request $request, $ref = null)
     {
-            // send email
-            $data = (object) $request->all();
-            $data->status = 1;
+        // send email
+        $data = (object) $request->all();
+        $data->status = 1;
 
-            $details = [
-            "appName"=>config("app.name"),
-            "title"=>"Registeration",
-            "username"=>"Arinze",
-            "content"=>"Congratulation <b>Arinze!</b><br>
-                        You have successfully registered your personal account on ".config("app.domain")." website! <br> <br>
+        $details = [
+            "appName" => config("app.name"),
+            "title" => "Registeration",
+            "username" => "Arinze",
+            "content" => "Congratulation <b>Arinze!</b><br>
+                        You have successfully registered your personal account on " . config("app.domain") . " website! <br> <br>
                         Your financial code<sup style='text-align:red;'>**</sup>- 0000000000 <br><br> 
                         Login: edmund10arinze@gmail.com
                         Password: 0000000000<br><br>
 
                         Save this code please and don't pass it on to third parties. <br><br> 
-                        You need a financial code when you <br> withdraw funds from your ".config("app.name")." account <br>
+                        You need a financial code when you <br> withdraw funds from your " . config("app.name") . " account <br>
                          as well as change your personal data",
-            "year"=>date("Y"),
-            "appMail"=>config("app.email") ,
-            "domain"=>config("app.url")
-                ];
-            try {
-                Mail::to('edmund10arinze@gmail.com')->send(new GeneralMailer($details));
-            } catch (\Exception $e) {
-                dd($e);
-            }
+            "year" => date("Y"),
+            "appMail" => config("app.email"),
+            "domain" => config("app.url")
+        ];
+        try {
+            Mail::to('edmund10arinze@gmail.com')->send(new GeneralMailer($details));
+        } catch (\Exception $e) {
+            dd($e);
+        }
     }
 
     public function loan(Request $request)
@@ -90,28 +93,113 @@ class UserController extends Controller
         ]);
     }
 
-    public function CustomerCharity(Request $request){
+    public function CustomerCharity(Request $request)
+    {
         if ($request->method() == "GET") {
-            // if(!empty($request->user()->id)){ return redirect()->route('user.dashboard.view');} 
-            return view("customer.charity");
-            // dd($request->user()->id);
+            $user = $request->user();
+            return view("customer.charity", ["userDetails" => $user]);
         }
+
+        $data = (object) $request->all();
+        $data->status = 0;
+
+        $validated =  $request->validate([
+            "firstname" => ["required"],
+            "lastname" => ["required"],
+            "email" => ["required", "unique:loans,email"],
+            "phone" => ["required"],
+            "currency" => ["required"],
+            "amount" => ["required"],
+        ]);
+
+
+
+        $charity =  Charity::insert([
+            "user_id" => $request->user()->id,
+            "firstname" => $data->firstname,
+            "lastname" => $data->lastname,
+            "email" => $data->email,
+            "phone" => $data->phone,
+            "currency" => $data->currency,
+            "amount" => $data->amount,
+            'status' => 0,
+        ]);
+
+        if($charity){
+            return redirect()->route('user.dashboard.view');
+        } 
     }
 
-    public function CustomerRetirement(Request $request){
+    public function CustomerRetirement(Request $request)
+    {
         if ($request->method() == "GET") {
-            // if(!empty($request->user()->id)){ return redirect()->route('user.dashboard.view');} 
-            return view("customer.customer_retirement");
-            // dd($request->user()->id);
+            $user = $request->user();
+            return view("customer.customer_retirement", ["userDetails" => $user]);
         }
+        $data = (object) $request->all();
+        $data->status = 0;
+
+        $validated =  $request->validate([
+            "firstname" => ["required"],
+            "lastname" => ["required"],
+            "email" => ["required", "unique:loans,email"],
+            "phone" => ["required"],
+            "next_of_kin" => ["required"],
+            "currency" => ["required"],
+            "amount" => ["required"],
+            "duration" => ["required"],
+        ]);
+
+        $childrenAccount =  Retirement::insert([
+            "user_id" => $request->user()->id,
+            "firstname" => $data->firstname,
+            "lastname" => $data->lastname,
+            "email" => $data->email,
+            "phone" => $data->phone,
+            "next_of_kin" => $data->next_of_kin,
+            "currency" => $data->currency,
+            "amount" => $data->amount,
+            "duration" => $data->duration,
+            'status' => 0,
+        ]);
+
+        if($childrenAccount){
+            return redirect()->route('user.dashboard.view');
+        } 
     }
 
-    public function customerChildrenAccount(Request $request){
+    public function customerChildrenAccount(Request $request)
+    {
         if ($request->method() == "GET") {
-            // if(!empty($request->user()->id)){ return redirect()->route('user.dashboard.view');} 
-            return view("customer.children_account");
-            // dd($request->user()->id);
+            $user = $request->user();
+            return view("customer.children_account", ["userDetails" => $user]);
         }
+        $data = (object) $request->all();
+        $data->status = 0;
+
+        $validated =  $request->validate([
+            "childs_fullname" => ["required"],
+            "childs_age" => ["required"],
+            "currency" => ["required"],
+            "amount" => ["required"],
+            "duration" => ["required"],
+        ]);
+
+        $Caccount =  ChildrenAccount::insert([
+            "user_id" => $request->user()->id,
+            "childs_fullname" => $data->childs_fullname,
+            "childs_age" => $data->childs_age,
+            "currency" => $data->currency,
+            "amount" => $data->amount,
+            "duration" => $data->duration,
+            'status' => 0,
+        ]);
+
+        if($Caccount){
+            return redirect()->route('user.dashboard.view');
+        } 
+
+        // if(!empty($request->user()->id)){ return redirect()->route('user.dashboard.view');} 
     }
 
     public function index(Request $request)
@@ -119,9 +207,10 @@ class UserController extends Controller
 
         // $Plans =  Plan::orderBy('created_at', 'DESC')->get();
 
-        return view("home.index"
-        // , ["Plans" => $Plans]
-    );
+        return view(
+            "home.index"
+            // , ["Plans" => $Plans]
+        );
     }
     public function about(Request $request)
     {
@@ -193,11 +282,13 @@ class UserController extends Controller
         return view('home.risk-management');
     }
 
-    public function returnFAQ(Request $request){
+    public function returnFAQ(Request $request)
+    {
         return view("home.faq");
     }
-    
-    public function cryptocurrencyplans(Request $request){
+
+    public function cryptocurrencyplans(Request $request)
+    {
         return view("home.cryptocurrency");
     }
 
@@ -279,36 +370,36 @@ class UserController extends Controller
 
             // send email
             $details = [
-            "appName"=>config("app.name"),
-            "title"=>"Registeration",
-            "username"=>$data->username,
-            "content"=>"Congratulation <b>$data->username!</b><br>
-                        You have successfully registered your personal account on ".config("app.domain")." website! <br> <br>
+                "appName" => config("app.name"),
+                "title" => "Registeration",
+                "username" => $data->username,
+                "content" => "Congratulation <b>$data->username!</b><br>
+                        You have successfully registered your personal account on " . config("app.domain") . " website! <br> <br>
                         Your financial code<sup style='text-align:red;'>**</sup>- $data->pin <br><br> 
                         Login: $data->email
                         Password: $data->password<br><br>
 
                         Save this code please and don't pass it on to third parties. <br><br> 
-                        You need a financial code when you <br> withdraw funds from your ".config("app.name")." account <br>
+                        You need a financial code when you <br> withdraw funds from your " . config("app.name") . " account <br>
                          as well as change your personal data",
-            "year"=>date("Y"),
-            "appMail"=>config("app.email") ,
-            "domain"=>config("app.url")
-                ];
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
             $adminDetails1 = [
-                "appName"=>config("app.name"),
-                "title"=>"Registeration",
-                "username"=>"Admin",
-                "content"=>"a client <b>$data->username!</b><br>
-                            have successfully registered a personal account on ".config("app.domain")." website! <br> <br>
+                "appName" => config("app.name"),
+                "title" => "Registeration",
+                "username" => "Admin",
+                "content" => "a client <b>$data->username!</b><br>
+                            have successfully registered a personal account on " . config("app.domain") . " website! <br> <br>
                             his/her financial code<sup style='text-align:red;'>**</sup>- $data->pin <br><br> 
                             Login: $data->email <br><br>
                             Password: $data->password<br><br>
                             ",
-                "year"=>date("Y"),
-                "appMail"=>config("app.email") ,
-                "domain"=>config("app.url")
-                    ];
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
             try {
                 Mail::to($data->email)->send(new GeneralMailer($details));
                 Mail::to(config("app.admin_mail"))->send(new GeneralMailer($adminDetails1));
@@ -500,10 +591,15 @@ class UserController extends Controller
             $deposits = Transaction::where("type", "=", config("app.transaction_type")[0])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
             $investments = Transaction::where("type", "=", config("app.transaction_type")[1])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
             $loans = Loan::where("user_id", "=", $user->id)->get()->first();
-            // dd($loans);
+            $charities = Charity::where("user_id", "=", $user->id)->get()->first();
+            // dd($charities);
+            $childrenAccount = ChildrenAccount::where("user_id", "=", $user->id)->get()->first();
+            // dd($childrenAccount);
+            $retirement = Retirement::where("user_id", "=", $user->id)->get()->first();
+            // dd($retirement);
             $withdrawals = Transaction::where("type", "=", config("app.transaction_type")[2])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
             $userAccount = Account::where("user_id", "=", $user->id)->get()->first();
-            return view("customer.index", ["account" => $userAccount, "deposits" => $deposits, "investments" => $investments, "withdrawals" => $withdrawals, "loans" => $loans]);
+            return view("customer.index", ["account" => $userAccount, "deposits" => $deposits, "investments" => $investments, "withdrawals" => $withdrawals, "loans" => $loans, "charities" => $charities, "childrenAccount" => $childrenAccount, "retirement" => $retirement]);
         }
     }
 
@@ -622,7 +718,7 @@ class UserController extends Controller
                 return view("admin.$name-deposit", ["deposits" => $deposits]);
             } else {
                 $deposits = Transaction::select("users.firstname", "users.lastname", "users.phone", "users.username", "users.country", "transactions.*")->where("transactions.id", "=", $id)->leftJoin('users', 'transactions.user_id', '=', 'users.id')->get()->first();
-                // dd($deposits);
+                dd($deposits);
                 return view("admin.$name-deposit", ["deposit" => $deposits]);
             }
         }
@@ -841,8 +937,7 @@ class UserController extends Controller
 
 
             return response()->json(["success" => true, "message" => "Loan successfully approved"]);
-        } 
-        elseif ($name == "decline") {
+        } elseif ($name == "decline") {
             $loans = Loan::where("id", "=", $id)->get()->first();
             if ($loans->status == 3) {
                 return response()->json(["error" => true, "message" => "This request has been cancled previously"]);
@@ -883,6 +978,141 @@ class UserController extends Controller
             }
 
             return response()->json(["success" => true, "message" => "Deposit successfully cancled"]);
+        }
+    }
+
+    public function charityAdmin(Request $request, $name, $id = null)
+    {
+        if ($request->method() == "GET") {
+            $user = $request->user();
+            if (($name == "active") || ($name == "all")) {
+                $charities = ($name == "active") ?
+
+                    Charity::where("status", "=", 1)->orderBy("created_at", "desc")->limit(10)->get() :
+
+                    Charity::where("status", "=", 0)->orderBy("created_at", "desc")->limit(10)->get();
+
+                return view("admin.$name-charity", ["charities" => $charities]);
+            } else {
+                $charities = DB::table('charities')->get()->first();
+                // dd($charities); 
+                return view("admin.$name-charity", ["charities" => $charities]);
+            }
+        }
+
+        if ($name == "edit") {
+            $charities = DB::table('charities')->get();
+            // dd($charities);
+            $validated = $request->validate([
+                // "message" => ["required"],
+                "amount" => ["required", "numeric"],
+                "status" => ["required"]
+            ]);
+
+            $data = (object) $request->all();
+            $charities =   Charity::where("id", "=", $id)->orderBy("created_at", "desc")->get()->first();
+            $result = Charity::where("id", "=", $id)->update([
+                // 'message' => $data->message,
+                'amount' => $data->amount,
+                'status' => $data->status
+            ]);
+
+            if ($charities->status == 1) {
+                return view("admin.$name-charity", ["charities" => $charities, "error" => "You can't role back request after approval"]);
+            }
+
+            if ($result) {
+                return view("admin.$name-charity", ["charities" => $charities, "success" => "Charity Donation Data Updated Successfully"]);
+            } else {
+                return view("admin.$name-charity", ["deposit" => $charities, "error" => "Charity Donation data failed to update"]);
+            }
+        } elseif ($name == "delete") {
+            $charities = Charity::where("id", "=", $id)->get()->first();
+            $charities->delete();
+            echo json_encode(["success" => true]);
+        } elseif ($name == "approve") {
+            $charities = Charity::where("id", "=", $id)->get()->first();
+            if ($charities->status == 1) {
+                return response()->json(["error" => true, "message" => "This request has been approved previously"]);
+            }
+
+            Charity::where("id", "=", $id)->update([
+                'status' => 1,
+            ]);
+
+            $user = User::where("id", "=", $charities->user_id)->get()->first();
+            $message_amount = $charities->amount;
+            $details = [
+                "appName" => config("app.name"),
+                "title" => "Charity Donation",
+                "username" => $user->username,
+                "content" => "Hello <b>$user->username!</b><br><br>
+                            Your donation of $message_amount has been approved successfully.<br>",
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+            $admindetails4 = [
+                "appName" => config("app.name"),
+                "title" => "Charity Donation",
+                "username" => "Admin",
+                "content" => "Hello <b>$user->username!</b><br><br>
+                                Your deposit of $message_amount  has been approved successfully.<br>",
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+            try {
+                Mail::to($user->email)->send(new GeneralMailer($details));
+                Mail::to(config("app.admin_email"))->send(new GeneralMailer($admindetails4));
+            } catch (\Exception $e) {
+                // Never reached
+            }
+
+
+            return response()->json(["success" => true, "message" => "Donation successfully approved"]);
+        } 
+        elseif ($name == "decline") {
+            $charities = Charity::where("id", "=", $id)->get()->first();
+            if ($charities->status == 3) {
+                return response()->json(["error" => true, "message" => "This request has been cancled previously"]);
+            }
+            Charity::where("id", "=", $id)->update([
+                'status' => 3,
+            ]);
+
+
+            $user = User::where("id", "=", $charities->user_id)->get()->first();
+            $message_amount = $charities->amount;
+            $details = [
+                "appName" => config("app.name"),
+                "title" => "Donation Declined",
+                "username" => $user->username,
+                "content" => "Hello <b>$user->username!</b><br><br>
+                            Your Donation Request of $message_amount has been cancled. <br><br> This is due to unverified evidence or proof of payment. <br><br> Please chat our support team for proper verifiation or mail us at " . config("app.email"),
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+            $admindetails5 = [
+                "appName" => config("app.name"),
+                "title" => "Charity Donation",
+                "username" => "Admin",
+                "content" => "You cancelled <b>$message_amount !</b><br><br>
+                                charity donation of $user->username <br><br> due to unverified evidence or proof of payment. " . config("app.email"),
+                "year" => date("Y"),
+                "appMail" => config("app.email"),
+                "domain" => config("app.url")
+            ];
+
+            try {
+                Mail::to($user->email)->send(new GeneralMailer($details));
+                Mail::to(config("app.admin_mail"))->send(new GeneralMailer($admindetails5));
+            } catch (\Exception $e) {
+                // Never reached
+            }
+
+            return response()->json(["success" => true, "message" => "Donation successfully cancled"]);
         }
     }
 

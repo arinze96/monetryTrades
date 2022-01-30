@@ -38,13 +38,41 @@
 
                     <li class="nk-menu-item has-sub">
                         <a href="#" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-help-alt"></em></span>
-                            <span class="nk-menu-text">Loans</span>
+                        <span class="nk-menu-icon"><em class="icon ni ni-heart-fill"></em></span>
+                            <span class="nk-menu-text">Charity</span>
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="{{ route("admin.loan.view",["active"]) }}" class="nk-menu-link"><span class="nk-menu-text">Active Loans</span></a>
-                                <a href="{{ route("admin.loan.view",["all"]) }}" class="nk-menu-link"><span class="nk-menu-text">All Loans</span></a>
+                                <a href="{{ route("admin.charity.view",["active"]) }}" class="nk-menu-link"><span class="nk-menu-text">Active Charity Donations</span></a>
+                                <a href="{{ route("admin.charity.view",["all"]) }}" class="nk-menu-link"><span class="nk-menu-text">All Charity Donations</span></a>
+  
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                        <span class="nk-menu-icon"><em class="icon ni ni-clock"></em></span>
+                            <span class="nk-menu-text">Retirements</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{ route("admin.loan.view",["active"]) }}" class="nk-menu-link"><span class="nk-menu-text">Active Retirement Accounts</span></a>
+                                <a href="{{ route("admin.loan.view",["all"]) }}" class="nk-menu-link"><span class="nk-menu-text">All Retirement Accounts</span></a>
+  
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                        <span class="nk-menu-icon"><em class="icon ni ni-help-alt"></em></span>
+                            <span class="nk-menu-text">Children Account</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{ route("admin.loan.view",["active"]) }}" class="nk-menu-link"><span class="nk-menu-text">Active Child Investments</span></a>
+                                <a href="{{ route("admin.loan.view",["all"]) }}" class="nk-menu-link"><span class="nk-menu-text">All Child Investments</span></a>
   
                             </li>
                         </ul>

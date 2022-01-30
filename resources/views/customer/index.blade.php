@@ -5,16 +5,18 @@
     <title>{{ config('app.nam') }}</title>
     @include('include.c_css')
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/61f3fcb0b9e4e21181bc612c/1fqgh65mk';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/61f3fcb0b9e4e21181bc612c/1fqgh65mk';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
 </head>
@@ -122,30 +124,6 @@
                                                     </div>
                                                 </div>
 
-                                                @if (!$loans == null)
-                                                <div class="col-sm-4">
-                                                    <div class="card card-bordered text-light is-dark h-100">
-                                                        <div class="card-inner">
-                                                            <div class="nk-wg7">
-                                                                <div class="nk-wg7-stats">
-                                                                    <div class="nk-wg7-title">Personal Loan
-                                                                    </div>
-                                                                    <div class="number-lg amount">
-                                                                        {{ $loans->amount }}
-                                                                    </div>
-                                                                </div>
-                                                                <div class="nk-wg7-foot">
-                                                                    <span class="nk-wg7-note">Loan Status &nbsp;
-                                                                        &nbsp; :
-                                                                            {{ $loans->status == 0 ? 'unapproved' : 'Aprroved'}}
-                                                                            <span></span></span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @endif
-                                                        
                                                 <div class="col-sm-4">
                                                     <div class="card card-bordered text-light is-dark h-100">
                                                         <div class="card-inner">
@@ -165,6 +143,82 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                @if (!$charities == null)
+                                                    <div class="col-sm-4">
+                                                        <div class="card card-bordered text-light is-dark h-100">
+                                                            <div class="card-inner">
+                                                                <div class="nk-wg7">
+                                                                    <div class="nk-wg7-stats">
+                                                                        <div class="nk-wg7-title">Charity Donation
+                                                                        </div>
+                                                                        <div class="number-lg amount">
+                                                                            {{-- ${{ $charities->amount }} --}}
+                                                                            ${{ number_format($charities->amount, 0, '.', ',') }}
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="nk-wg7-foot">
+                                                                        <span class="nk-wg7-note">Donation Status:
+                                                                            &nbsp;
+                                                                            &nbsp; 
+                                                                            {{ $charities->status == 0 ? 'unapproved' : 'Aprroved' }}
+                                                                            <span></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endif
+
+                                                @if (!$retirement == null)
+                                                    <div class="col-sm-4">
+                                                        <div class="card card-bordered text-light is-dark h-100">
+                                                            <div class="card-inner">
+                                                                <div class="nk-wg7">
+                                                                    <div class="nk-wg7-stats">
+                                                                        <div class="nk-wg7-title">Retirement Funds
+                                                                        </div>
+                                                                        <div class="number-lg amount">
+                                                                            {{ $retirement->amount }}
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="nk-wg7-foot">
+                                                                        <span class="nk-wg7-note">Investment Status:
+                                                                            &nbsp;
+                                                                            &nbsp; 
+                                                                            {{ $retirement->status == 0 ? 'unapproved' : 'Aprroved' }}
+                                                                            <span></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endif
+
+                                                @if (!$childrenAccount == null)
+                                                    <div class="col-sm-4">
+                                                        <div class="card card-bordered text-light is-dark h-100">
+                                                            <div class="card-inner">
+                                                                <div class="nk-wg7">
+                                                                    <div class="nk-wg7-stats">
+                                                                        <div class="nk-wg7-title">Children Investment
+                                                                        </div>
+                                                                        <div class="number-lg amount">
+                                                                            {{ $childrenAccount->amount }}
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="nk-wg7-foot">
+                                                                        <span class="nk-wg7-note">Child Account Status:
+                                                                            &nbsp;
+                                                                            &nbsp; 
+                                                                            {{ $childrenAccount->status == 0 ? 'unapproved' : 'Aprroved' }}
+                                                                            <span></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endif
 
                                                 <div class="col-sm-4">
                                                     <div class="card card-bordered text-light is-dark h-100">
@@ -197,7 +251,8 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="nk-wg7-foot">
-                                                                    <span class="nk-wg7-note">Total Deposits of users
+                                                                    <span class="nk-wg7-note">Total Deposits of
+                                                                        users
                                                                         <span></span></span>
                                                                 </div>
                                                             </div><!-- .nk-wg7 -->

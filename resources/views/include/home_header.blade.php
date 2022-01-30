@@ -139,6 +139,13 @@
                             </div>
                         </li>
                     </a>
+                    <a href="{{route('charity')}}" aria-expanded="false">
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                CHARITY
+                            </div>
+                        </li>
+                    </a>
                     <a href="{{route('children-account')}}" aria-expanded="false">
                         <li class="hidden-lg-up">
                             <div class="po">

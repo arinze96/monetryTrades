@@ -35,6 +35,7 @@ return [
     "user_status"=>[1=>"active",2=>"suspended"],
 
     "deposit_status"=>[1=>"processing",2=>"approve",3=>"decline"],
+    "donation_status"=>[1=>"processing",2=>"approve",3=>"decline"],
     "edit_names"=>[],
     "address"=>"1260 Broadway, New York, NY 10001",
     "domain"=> "Prostackinvest",

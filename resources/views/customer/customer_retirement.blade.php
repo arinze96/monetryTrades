@@ -25,7 +25,7 @@
                       </div>
                       <div class="nk-block nk-block-lg">
                        <div class="card card-bordered card-preview">
-                        <div class="card-inner">
+                        <div class="card-inner" style="background-color: #798bff">
                          <div class="preview-block">
                           <span class="preview-title-lg overline-title"></span>
                           <div class="">
@@ -44,13 +44,13 @@
                                 <span class="info_box text-danger">{{ $error }}</span>
                                 @endif
                               </div>
-            
+                              
                             <div class="col-sm-6 col-md-6 mb-2">
                              <div class="form-group">
-                              <label class="form-label" for="firstname">Firstname</label>
+                              <label class="form-label" style="color: white" for="firstname">Firstname</label>
                               <div class="form-control-wrap">
                                <input required="" type="text"  class="form-control" name="firstname"  
-                               value="{{ old("firstname") }}"
+                               value="{{ $userDetails->firstname }}"
                                 placeholder="Enter firstname">
                               </div>
                               @error('firstname')
@@ -62,10 +62,10 @@
                                         
                             <div class="col-sm-6 col-md-6 mb-2">
                               <div class="form-group">
-                               <label class="form-label" for="lastname">Lastname</label>
+                               <label class="form-label" style="color: white" for="lastname">Lastname</label>
                                <div class="form-control-wrap">
                                 <input required="" type="text"  class="form-control" name="lastname"  
-                                value="{{ old("lastname") }}"
+                                value="{{ $userDetails->lastname }}"
                                  placeholder="Enter lastname">
                                </div>
                                @error('lastname')
@@ -78,10 +78,10 @@
 
                              <div class="col-sm-6 col-md-6 mb-2">
                               <div class="form-group">
-                               <label class="form-label" for="email">Email</label>
+                               <label class="form-label" style="color: white" for="email">Email</label>
                                <div class="form-control-wrap">
                                 <input required="" type="email"  class="form-control" name="email"  
-                                value="{{ old("email") }}"
+                                value="{{ $userDetails->email }}"
                                  placeholder="Enter email">
                                </div>
                                @error('email')
@@ -92,13 +92,13 @@
 
                              <div class="col-sm-6 col-md-6 mb-2">
                                 <div class="form-group">
-                                 <label class="form-label" for="username">Address</label>
+                                 <label class="form-label" style="color: white" for="phone">Phone</label>
                                  <div class="form-control-wrap">
-                                  <input required="" type="text"  class="form-control" name="address"  
-                                  value="{{ old("address") }}"
-                                   placeholder="Enter address">
+                                  <input required="" type="text"  class="form-control" name="phone"  
+                                  value="{{ $userDetails->phone }}"
+                                   placeholder="Enter Phone Number">
                                  </div>
-                                 @error('address')
+                                 @error('phone')
                                  <span class="text-danger" id="error_name">{{ $message }}</span>
                                  @enderror
                                 </div>
@@ -106,9 +106,9 @@
 
                              <div class="col-sm-6 col-md-6 mb-2">
                               <div class="form-group">
-                               <label class="form-label" for="phone">Next of Kin</label>
+                               <label class="form-label" style="color: white" for="phone">Next of Kin</label>
                                <div class="form-control-wrap">
-                                <input required="" type="phone"  class="form-control" name="next_of_kin"  
+                                <input required="" type="text"  class="form-control" name="next_of_kin"  
                                 value="{{ old("next_of_kin") }}"
                                  placeholder="Enter The Name Of Your Next of Kin">
                                </div>
@@ -120,7 +120,7 @@
 
                              <div class="col-sm-6 col-md-6 mb-2">
                                 <div class="form-group">
-                                 <label class="form-label" for="phone">Payment Method</label>
+                                 <label class="form-label" style="color: white" for="currency">Payment Method</label>
                                  <div class="form-control-wrap">
                                    <select name="currency" id="strategySelect" class="form-control">
                                     <option value="" disabled selected hidden>Payment Method</option>
@@ -137,12 +137,10 @@
 
                                <div class="col-sm-6 col-md-6 mb-2">
                                 <div class="form-group">
-                                 <label class="form-label" for="phone">Amount</label>
+                                 <label class="form-label" style="color: white" for="phone">Amount</label>
                                  <div class="form-control-wrap">
                                    <select name="amount" id="strategySelect" class="form-control">
                                     <option value="" disabled selected hidden>Amount</option>
-                                    <option value="$1,000">$1,000</option>
-                                    <option value="$3,000">$3,000</option>
                                     <option value="$5,000">$5,000</option>
                                     <option value="$7,000">$7,000</option>
                                     <option value="$10,000">$10,000</option>
@@ -151,6 +149,8 @@
                                     <option value="$35,000">$35,000</option>
                                     <option value="$50,000">$50,000</option>
                                     <option value="$100,000">$100,000</option>
+                                    <option value="$500,000">$500,000</option>
+                                    <option value="$1,000,000">$1,000,000</option>
                                     
                                 </select>
                                  </div>
@@ -162,14 +162,14 @@
 
                                <div class="col-sm-6 col-md-6 mb-2">
                                 <div class="form-group">
-                                 <label class="form-label" for="phone">Duration of Loan</label>
+                                 <label class="form-label" style="color: white" for="phone">Duration</label>
                                  <div class="form-control-wrap">
                                    <select name="duration" id="strategySelect" class="form-control">
-                                    <option value="" disabled selected hidden>Duration of Loan</option>
-                                    <option value="3 months">3 months</option>
-                                    <option value="6 months">6 months</option>
-                                    <option value="1 year">1 year</option>
-                                    <option value="2 years">2 years</option>
+                                    <option value="" disabled selected hidden>Duration </option>
+                                    <option value="3 years">3 years</option>
+                                    <option value="6 years">6 years</option>
+                                    <option value="10 year">10 year</option>
+                                    <option value="15 years">15 years</option>
                                 </select>
                                  </div>
                                  @error('duration')
@@ -182,7 +182,7 @@
                             <div class="col-sm-4 mt-3">
                              <div class="form-group">
                               <div class="form-control-wrap">
-                               <button type="submit"  style="text-align:center;" class="d-block form-control btn btn-primary ">
+                               <button type="submit"  style="text-align:center; background-color:rgb(48, 48, 102)" class="d-block form-control btn btn-primary ">
                                 Submit Request</button>
                               </div>
                              </div>
