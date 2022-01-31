@@ -139,10 +139,10 @@
                             </div>
                         </li>
                     </a>
-                    <a href="{{route('charity')}}" aria-expanded="false">
+                    <a href="{{route('retirement')}}" aria-expanded="false">
                         <li class="hidden-lg-up">
                             <div class="po">
-                                CHARITY
+                                Retirement
                             </div>
                         </li>
                     </a>
@@ -168,9 +168,9 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('investments')}}">INVESTMENTS</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="{{route('real_estate')}}">Real Estate</a>
-                            {{-- <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a> --}}
+                            <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a>
                             <a class="dropdown-item" href="{{route('cryptocurrency-plans')}}">investment Plans</a>
-                            {{-- <a class="dropdown-item" href="{{route('retirement')}}">Retirement</a> --}}
+                            <a class="dropdown-item" href="{{route('retirement')}}">Retirement</a>
                             <a class="dropdown-item" href="{{route('children-account')}}">Children Account</a>
                         </div>
                     </li>

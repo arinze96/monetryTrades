@@ -4,7 +4,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="html 5 template">
         <meta name="author" content="">
-        <title>GoBiz - HTML5 Template</title>
+        {{-- <title></title> --}}
         <!-- FAVICON -->
         <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/background/MT_Trans_Vector.png')}}">
         <!-- GOOGLE FONTS -->
