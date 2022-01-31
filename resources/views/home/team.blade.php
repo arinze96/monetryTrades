@@ -34,7 +34,7 @@
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
                         <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-1.jpg')}}" alt="" /></a>
+                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-1.jpg')}}" alt="" /></a> --}}
                         </div>
                         <div class="lower-box">
                             <h3><a href="our-team.html">Arling Tracy</a></h3>
@@ -46,7 +46,7 @@
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
                         <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-2.jpg')}}" alt="" /></a>
+                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-2.jpg')}}" alt="" /></a> --}}
                            
                         </div>
                         <div class="lower-box">
@@ -59,7 +59,7 @@
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
                         <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-3.jpg')}}" alt="" /></a>
+                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-3.jpg')}}" alt="" /></a> --}}
                            
                         </div>
                         <div class="lower-box">
@@ -72,7 +72,7 @@
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
                         <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-4.jpg')}}" alt="" /></a>
+                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-4.jpg')}}" alt="" /></a> --}}
                            
                         </div>
                         <div class="lower-box">
@@ -87,7 +87,7 @@
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
                         <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-5.jpg')}}" alt="" /></a>
+                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-5.jpg')}}" alt="" /></a> --}}
                            
                         </div>
                         <div class="lower-box">
@@ -100,7 +100,7 @@
                 <div class="team-block col-lg-3 col-md-6 col-xs-12">
                     <div class="inner-box team-details">
                         <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-6.jpg')}}" alt="" /></a>
+                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-6.jpg')}}" alt="" /></a> --}}
                            
                         </div>
                         <div class="lower-box">
@@ -113,7 +113,7 @@
                 <div class="team-block col-lg-3 col-md-6 col-xs-12 npb">
                     <div class="inner-box team-details">
                         <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-7.jpg')}}" alt="" /></a>
+                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-7.jpg')}}" alt="" /></a> --}}
                            
                         </div>
                         <div class="lower-box">
@@ -126,7 +126,7 @@
                 <div class="team-block col-lg-3 col-md-6 col-xs-12 npb">
                     <div class="inner-box team-details">
                         <div class="image team-head">
-                            <a href="our-team.html"><img src="{{asset('assets/images/team/team-8.jpg')}}" alt="" /></a>
+                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-8.jpg')}}" alt="" /></a> --}}
                            
                         </div>
                         <div class="lower-box">

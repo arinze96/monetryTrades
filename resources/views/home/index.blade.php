@@ -328,23 +328,28 @@
 				<p>Investment Plans</p>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-md-6 col-xs-12">
-					<div class="plan text-center">
-						<span class="plan-name">Classic<small>Plan</small></span>
-						<p class="plan-price"><sup class="currency">$</sup><strong>3,000</strong>
-						</p>
-						<ul class="list-unstyled">
-							<li>10% monthly</li>
-							<li>12 months investment duration</li>
+                @if (!$Plans->isEmpty())
+                @foreach ($Plans as $plan)
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="plan text-center featured no-mgb yes-mgb">
+                        <span class="plan-name">{{ ucwords($plan->name) }}</span>
+                        <p class="plan-price"><sup
+                                class="currency">$</sup><strong style="font-size:20p"></span>{{ number_format($plan->min, 0, '.', ',') }}</strong></p>
+                        <ul class="list-unstyled">
+							<li>maximum amount </span>${{ number_format($plan->min, 0, '.', ',') }}</li>
+                            <li>Daily ROI: {{ $plan->roi }}%</li>
+                            <li>Duration: {{ $plan->duration }}%</li>
+                            <li>Referral Commision: {{ $plan->commission }}%</li>
 							<li>Security Management</li>
-							<li>Automated Payout</li>
-							<li>24/7 Tech Support</li>
-							<li>Unlimited Project</li>
-						</ul>
-						<a class="btn btn-secondary btn-lg" href="{{route('user.register')}}">Sign Up Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-xs-12">
+							<li>24/7 Support</li>
+                        </ul>
+                        <a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
+                    </div>
+                </div>
+                @endforeach
+                @endif
+
+				{{-- <div class="col-lg-3 col-md-6 col-xs-12">
 					<div class="plan text-center">
 						<span class="plan-name">Deluxe<small>Plan</small></span>
 						<p class="plan-price"><sup class="currency">$</sup><strong>100,000</strong>
@@ -360,22 +365,7 @@
 						<a class="btn btn-secondary btn-lg" href="{{route('user.register')}}">Sign Up Now</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="plan text-center featured no-mgb yes-mgb">
-                        <span class="plan-name">Master <small>plan</small></span>
-                        <p class="plan-price"><sup
-                                class="currency">$</sup><strong>500,000</strong></p>
-                        <ul class="list-unstyled">
-							<li>20% monthly</li>
-							<li>12 months investment duration</li>
-							<li>Security Management</li>
-							<li>Automated Payout</li>
-							<li>24/7 Tech Support</li>
-							<li>Unlimited Project</li>
-                        </ul>
-                        <a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
-                    </div>
-                </div>
+
 				<div class="col-lg-3 col-md-6 col-xs-12">
 					<div class="plan text-center">
 						<span class="plan-name">Grand<small>Plan</small></span>
@@ -391,7 +381,7 @@
 						</ul>
 						<a class="btn btn-secondary btn-lg" href="{{route('user.register')}}">Sign Up Now</a>
 					</div>
-				</div>
+				</div> --}}
 			</div>
 		</div>
 	</section>

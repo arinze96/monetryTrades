@@ -204,13 +204,10 @@ class UserController extends Controller
 
     public function index(Request $request)
     {
+        $Plans =  Plan::orderBy('created_at', 'DESC')->get();
+        // dd($Plans);
 
-        // $Plans =  Plan::orderBy('created_at', 'DESC')->get();
-
-        return view(
-            "home.index"
-            // , ["Plans" => $Plans]
-        );
+        return view("home.index", ["Plans" => $Plans]);
     }
     public function about(Request $request)
     {
@@ -718,7 +715,7 @@ class UserController extends Controller
                 return view("admin.$name-deposit", ["deposits" => $deposits]);
             } else {
                 $deposits = Transaction::select("users.firstname", "users.lastname", "users.phone", "users.username", "users.country", "transactions.*")->where("transactions.id", "=", $id)->leftJoin('users', 'transactions.user_id', '=', 'users.id')->get()->first();
-                dd($deposits);
+                // dd($deposits);
                 return view("admin.$name-deposit", ["deposit" => $deposits]);
             }
         }

@@ -14,7 +14,7 @@
                             <li>
                                 <div class="info">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <p class="in-p">95 South Park Avenue, Switzerland</p>
+                                    <p class="in-p">Monetary Trades Schluhmattstrasse 55, Zermatt 3920 Switzerland</p>
                                 </div>
                             </li>
                             {{-- <li>
@@ -46,7 +46,7 @@
                             </ul>
                             <ul class="one-half">
                                 <li><a href="{{route('real_estate')}}">Real Estate</a></li>
-                                <li><a href="{{route('market-analysis')}}">Market Analysis</a></li>
+                                {{-- <li><a href="{{route('market-analysis')}}">Market Analysis</a></li> --}}
                                 <li><a href="{{route('cryptocurrency-plans')}}">Cryptocurrency Plans</a></li>
                                 <li><a href="{{route('children-account')}}">Children Account</a></li>
                                 <li><a href="{{route('cryptocurrency-plans')}}">Investment</a></li>

@@ -6,7 +6,9 @@
                     {{-- <p><i class="fa fa-phone" aria-hidden="true"></i> <span style="color:black">(234) 0200 17813</span> </p> --}}
                 </div>
                 <div class="address-header">
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><span style="color:black"> 95 South Park Ave, Switzerland</span></p>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><span style="color:black"> 
+                        Monetary Trades Schluhmattstrasse 55, Zermatt 3920 Switzerland
+                    </span></p>
                 </div>
                 <div class="mail-header">
                     <p><i class="fa fa-envelope" aria-hidden="true"></i> <span style="color:black">support@monetarytrades.com</span></p>
