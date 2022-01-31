@@ -24,115 +24,31 @@
         </div>
     </section>
     <!-- START SECTION TEAM -->
-    <section class="team">
+    <section id="case-study-single" class="case-study case-study-single">
         <div class="container">
-            <div class="sec-title">
-                <h2><span>Meet Our </span>Experts</h2>
-            </div>
-            <div class="row team-all">
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-1.jpg')}}" alt="" /></a> --}}
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3">
+
+                </div><!-- .col-lg-3 end -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="case--study-text">
+                                <h1 style="font-style:italics; color:#0f1341">Portfolio management</h1>
+
+                                <p>
+									Monetarytrades believes portfolio management is far more than just buying stocks and bonds and hoping they do well. We use a tested “top-down” investment approach combined with personalized planning to build a portfolio tailored to your long-term financial goals. Our proven approach has attracted a global base of over 900 million individual and institutional clients.
+                                </p>
+								<p>
+									We want to improve the financial well-being of our clients, beyond just recommending an investment strategy. We stay in touch as your needs evolve and market conditions shift. We help you meet your longer-term goals with an investment strategy that’s specifically designed for you. And we’re transparent about the investing decisions we make for you because we believe an informed investor is a better investor and a happier client.
+								</p>
+								<p>
+									Much like a tailor who alters the hem, sleeves, and collar of a suit to fit an individual's proportions, we take a variety of factors into account to create a portfolio tailored to your needs. Some of the factors we may consider when choosing the optimal long-term investment strategy and near-term portfolio tactics include: investment Goals, Tax consideration and Income needs. Our dedicated Portfolio Evaluation Group, under the guidance of our Investment Policy Committee, will use this information to provide you with a written personalized portfolio analysis and investment strategy recommendation. As your circumstances change, your portfolio needs may too. Your personal Investment Counselor will regularly review your individual situation with you and keep you abreast of our views on capital markets and important developments related to your portfolio.
+								</p>
+                                
+                            </div>
                         </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Arling Tracy</a></h3>
-                            <div class="designation">Acountant</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-2.jpg')}}" alt="" /></a> --}}
-                           
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Carls Jhons</a></h3>
-                            <div class="designation">Financial Advisor</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-3.jpg')}}" alt="" /></a> --}}
-                           
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Katy Grace</a></h3>
-                            <div class="designation">Team Leader</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-4.jpg')}}" alt="" /></a> --}}
-                           
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Mark Web</a></h3>
-                            <div class="designation">Founder &amp; CEO</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row team-all mt-44">
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-5.jpg')}}" alt="" /></a> --}}
-                           
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Arling Tracy</a></h3>
-                            <div class="designation">Acountant</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-6.jpg')}}" alt="" /></a> --}}
-                           
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Carls Jhons</a></h3>
-                            <div class="designation">Financial Advisor</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12 npb">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-7.jpg')}}" alt="" /></a> --}}
-                           
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Katy Grace</a></h3>
-                            <div class="designation">Team Leader</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Team Block-->
-                <div class="team-block col-lg-3 col-md-6 col-xs-12 npb">
-                    <div class="inner-box team-details">
-                        <div class="image team-head">
-                            {{-- <a href="our-team.html"><img src="{{asset('assets/images/team/team-8.jpg')}}" alt="" /></a> --}}
-                           
-                        </div>
-                        <div class="lower-box">
-                            <h3><a href="our-team.html">Mark Web</a></h3>
-                            <div class="designation">Founder &amp; CEO</div>
-                        </div>
+
                     </div>
                 </div>
             </div>

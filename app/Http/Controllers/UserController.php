@@ -246,7 +246,11 @@ class UserController extends Controller
 
     public function cryptocurrency(Request $request)
     {
-        return view('home.cryptocurrency-plans');
+        // return view('hom');
+        $Plans =  Plan::orderBy('created_at', 'DESC')->get();
+        // dd($Plans);
+
+        return view("home.cryptocurrency-plans", ["Plans" => $Plans]);
     }
 
     public function investments(Request $request)

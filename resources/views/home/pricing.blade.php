@@ -37,51 +37,6 @@
                 </div><!-- .row end -->
             </div><!-- .container end -->
         </section><!-- #page-title end -->
-        <section id="about1" class="about about-1 bg-gray pt-110 pb-50">
-            <div class="container">
-                <h1 style="text-align: center; color:#98cb2b">Company Milestone</h1>
-                <!-- .row end -->
-                <div class="counter counter-1">
-                    <div class="row">
-                        <!-- count #1 -->
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                            <div class="count-box text-center">
-                                <div class="counting">1,538</div>
-                                <div class="count-title">No of Investors and counting</div>
-                            </div>
-                        </div>
-                        <!-- .col-md-3 end -->
-                        <!-- count #2 -->
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                            <div class="count-box text-center">
-                                <div class="counting">5,124</div>
-                                <div class="count-title">Deposit</div>
-                            </div>
-                        </div>
-                        <!-- .col-md-3 end -->
-                        <!-- count #3 -->
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                            <div class="count-box text-center">
-                                <div class="counting">13,128</div>
-                                <div class="count-title">Withdrawals</div>
-                            </div>
-                        </div>
-                        <!-- .col-md-3 end -->
-                        <!-- count #4 -->
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                            <div class="count-box text-center">
-                                <div class="counting">29,534</div>
-                                <div class="count-title">Working Hours</div>
-                            </div>
-                        </div>
-                        <!-- .col-md-3 end -->
-                    </div>
-                    <!-- .row end -->
-                </div>
-                <!-- .counter end -->
-            </div>
-            <!-- .container end -->
-        </section>
 
 
 

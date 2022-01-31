@@ -175,11 +175,11 @@
                             <div class="panel panel-default">
                                 <h4 class="panel-heading mb-1">
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                        href="#tab-15">What is the minimum a,ount to start investing?</a>
+                                        href="#tab-15">What is the minimum amount to start investing?</a>
                                 </h4>
                                 <div id="tab-15" class="panel-collapse collapse">
                                     <p>
-                                        You can start investing with 3,000 USD.
+                                        You can start investing with 1,000 USD.
                                     </p>
                                 </div>
                             </div>
