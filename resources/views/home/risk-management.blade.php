@@ -42,7 +42,7 @@
                                 <br>
                                 <h1 style="font-style:italics; color:#0f1341">Risk Factors</h1>
 								<p>
-                                    Risk is an inseparable part of any investment process, and even though Blueglide Capital is operating within guidelines aimed at minimizing the potential risks, our investors should be aware of all the existing risks of investing in cryptocurrencies:
+                                    Risk is an inseparable part of any investment process, and even though Monetary Trades is operating within guidelines aimed at minimizing the potential risks, our investors should be aware of all the existing risks of investing in cryptocurrencies:
 								</p>
 								<br>
                                 <p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;

@@ -58,9 +58,8 @@ class UserController extends Controller
     public function loan(Request $request)
     {
         if ($request->method() == "GET") {
-            // if(!empty($request->user()->id)){ return redirect()->route('user.dashboard.view');} 
-            return view("customer.loan");
-            // dd($request->user()->id);
+            $user = $request->user();
+            return view("customer.loan", ["userDetails" => $user]);
         }
 
         $data = (object) $request->all();
@@ -91,6 +90,8 @@ class UserController extends Controller
             "duration" => $data->duration,
             'status' => 0,
         ]);
+
+        if($loan){ return redirect()->route('user.dashboard.view');} 
     }
 
     public function CustomerCharity(Request $request)

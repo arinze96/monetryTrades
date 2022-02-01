@@ -49,10 +49,10 @@ Route::get('/real-estate', [UserController::class,"realestate"])->name("real_est
 // Route::get('/home', [UserController::class,"home"])->name("home");
 Route::get('/children-account', [UserController::class,"childrenaccount"])->name("children-account");
 Route::get('/charity', [UserController::class,"charity"])->name("charity");
+Route::get('/retirement', [UserController::class,"retirement"])->name("retirement");
 Route::get('/investments', [UserController::class,"investments"])->name("investments");
 Route::get('/company', [UserController::class,"company"])->name("company");
 Route::get('/market-analysis', [UserController::class,"marketanalysis"])->name("market-analysis");
-Route::get('/retirement', [UserController::class,"retirement"])->name("retirement");
 Route::get('/cryptocurrency-plans', [UserController::class,"cryptocurrencyplans"])->name("cryptocurrency-plans");
 Route::get('/risk-management', [UserController::class,"riskmanagement"])->name("risk-management");
 Route::get('/what-we-offer', [UserController::class,"whatweoffer"])->name("what-we-offer");

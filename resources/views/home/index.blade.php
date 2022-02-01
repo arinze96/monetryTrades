@@ -336,9 +336,9 @@
                         <p class="plan-price"><sup
                                 class="currency">$</sup><strong style="font-size:20p"></span>{{ number_format($plan->min, 0, '.', ',') }}</strong></p>
                         <ul class="list-unstyled">
-							<li>maximum amount </span>${{ number_format($plan->min, 0, '.', ',') }}</li>
-                            <li>Daily ROI: {{ $plan->roi }}%</li>
-                            <li>Duration: {{ $plan->duration }}%</li>
+							<li>minimum amount </span>${{ number_format($plan->min, 0, '.', ',') }}</li>
+                            <li>Daily ROI: {{ $plan->roi }}</li>
+                            <li>Duration: {{ $plan->duration }}</li>
                             <li>Referral Commision: {{ $plan->commission }}%</li>
 							<li>Security Management</li>
 							<li>24/7 Support</li>

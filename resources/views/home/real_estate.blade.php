@@ -71,7 +71,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-md-6">
 					<p>
-						The Blueglide Capital Growth REIT is designed to be a long-­term investment and is inherently illiquid in nature. It has a 2-year projected term. We aim to invest in projects that can be sold within approximately two years. We maintain several cash-flowing properties in the portfolio, generating revenue from rents. When market conditions are suitable for an advantageous liquidation event, we sell the assets at which point investors will receive their principal and returns back. Our team shares the same vision and we have the experience. We have the team, the platform and the technology to make it happen and nothing’s going to stop us from bringing wealth-building opportunities to the everyday investor.
+						The Monetary Trades Growth REIT is designed to be a long-­term investment and is inherently liquid in nature. It has a 2-year projected term. We aim to invest in projects that can be sold within approximately two years. We maintain several cash-flowing properties in the portfolio, generating revenue from rents. When market conditions are suitable for an advantageous liquidation event, we sell the assets at which point investors will receive their principal and returns back. Our team shares the same vision and we have the experience. We have the team, the platform and the technology to make it happen and nothing’s going to stop us from bringing wealth-building opportunities to the everyday investor.
 					</p>
 				</div>
 

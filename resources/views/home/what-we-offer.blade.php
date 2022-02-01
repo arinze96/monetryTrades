@@ -114,7 +114,7 @@
                                 <h4 style="font-style:italics; color:#0f1341">Assessing Your Financial Plans</h4>
 								<p>1) Does your financial plan provide an investment strategy to help you reach your financial goals and objectives?</p>
 								<p>
-									The overall success of your financial plan is partly dependent on an appropriate investment recommendation, based on your long-term financial goals and objectives. At Blueglide Capital, we take into account everything from your family health history to the specific stocks, bonds or other investments in your portfolio to help build an in-depth understanding of the objectives for your assets. Using tools like portfolio simulations and historical modeling, we can provide an investment recommendation we believe is most likely to help you reach your goals. This recommendation provides the foundation for your future financial success, and may help you avoid running out of money in retirement.
+									The overall success of your financial plan is partly dependent on an appropriate investment recommendation, based on your long-term financial goals and objectives. At Monetary Trades, we take into account everything from your family health history to the specific stocks, bonds or other investments in your portfolio to help build an in-depth understanding of the objectives for your assets. Using tools like portfolio simulations and historical modeling, we can provide an investment recommendation we believe is most likely to help you reach your goals. This recommendation provides the foundation for your future financial success, and may help you avoid running out of money in retirement.
 								</p>
 
 								<p>

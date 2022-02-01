@@ -155,7 +155,7 @@
                                     build movements of social change.</p>
 
                                 <h1 style="font-style:italics; color:#0f1341">Safeguarding Policy</h1>
-                                <p>BLUEGLIDE CAPITAL’s donation for Children partners with community-based organizations
+                                <p>MONETARY TRADES’s donation for Children partners with community-based organizations
                                     around the world to help children and youth reach their full potential and advance
                                     their rights. We are deeply committed to protecting those most at risk and to acting
                                     as a role model for child- and youth-serving organizations.
@@ -177,7 +177,7 @@
                                     activities. <br>
                                     Our Global Safeguarding Policy reflects our commitment to respect, promote, uphold,
                                     and protect the rights of the child as set out in the UN Convention on the Rights of
-                                    the Child and in line with Blueglide Capital values.</p>
+                                    the Child and in line with Monetary Trades values.</p>
 
                                 <h1 style="font-style:italics; color:#0f1341">OUR VISION</h1>
                                 Our vision is that every child and young person has a safe and happy childhood, and the
@@ -210,7 +210,7 @@
 										
 										<h1 style="font-style:italics; color:#0f1341">OUR IMPACT</h1>
 										<p>
-											Right now, Blueglide Capitals is helping the most vulnerable children across the Globe, We work to change the lives of vulnerable children starting at an early age. We’ve been doing this for about 3years. We’ve learnt a lot in this time - gathering experience and expertise that we use every day in more than 475 local services, in schools, and online. We make a real difference by doing what’s proven to work, and by coming up with new solutions. Last year, we reached 387,000 children, young people and families across the globe.
+											Right now, Monetary Trades is helping the most vulnerable children across the Globe, We work to change the lives of vulnerable children starting at an early age. We’ve been doing this for about 3years. We’ve learnt a lot in this time - gathering experience and expertise that we use every day in more than 475 local services, in schools, and online. We make a real difference by doing what’s proven to work, and by coming up with new solutions. Last year, we reached 387,000 children, young people and families across the globe.
 											
 											We make sure children get the best start in life. Our foster, adoption and modern residential services find children a loving home. We protect those who have been abused or neglected, and help children who care for others or find themselves homeless. Projects like the Blues Programme give young people the tools to look after their mental and emotional wellbeing.
 											
@@ -222,7 +222,7 @@
 										<p>The number of children and young people we helped to find a stable and loving home. We’ve protected them from domestic violence, self-harm and suicide; built warm and supportive relationships with parents and carers; and helped them develop social skills and friendships. We’ve kept families together, or made sure children are cared for through fostering and adoption.</p>
 
 										<h4 style="font-style:italics; color:#0f1341">11,000</h4>
-										<p>The number of children we’ve helped to improve their mental health in 2017/18. We’ve given support to young people who care for a family member, helped build practical life skills and friendships, turned around the lives of those who have committed a crime. Seventy-seven per cent of young people who took part in our Blues Programme showed an improvement in their mental health and wellbeing. We’ve also provided medical support to critically ill children suffering from cancer,heart problems and other severe ailments,we provide these kids with the best medical attention ranging from medical surgeries,to drug procurement and provision of essential needs..</p>
+										<p>The number of children we’ve helped to improve their mental health in 2017/18. We’ve given support to young people who care for a family member, helped build practical life skills and friendships, turned around the lives of those who have committed a crime. Seventy-seven per cent of young people who took part in our enhanced Programme showed an improvement in their mental health and wellbeing. We’ve also provided medical support to critically ill children suffering from cancer,heart problems and other severe ailments,we provide these kids with the best medical attention ranging from medical surgeries,to drug procurement and provision of essential needs..</p>
 
 										<h1 style="font-style:italics; color:#0f1341">Where your money goes</h1>
 										<p>In 2018/19, your donations helped us reach more than 387,000 children, young people and families across the globe
