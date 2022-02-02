@@ -59,7 +59,7 @@
                         <img src="{{ asset('assets/images/background/charity-2.jpg') }}" />
                     </div>
                     <div class="col-lg-8 col-md-6">
-                        <p>This one belief guides us in everything we do at Blueglide Capital. It inspires us to grant
+                        <p>This one belief guides us in everything we do at Monetary Trades. It inspires us to grant
                             life-changing wishes for children going through so much. It compels us to be creative in
                             exceeding the expectations of every kid. It drives us to make our donated resources go as
                             far as possible. Most of all, it's the founding principle of our vision to grant the wish of

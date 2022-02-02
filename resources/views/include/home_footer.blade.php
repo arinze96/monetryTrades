@@ -38,7 +38,7 @@
                         <div class="quick-links">
                             <ul class="one-half mr-5">
                                 <li><a href="{{route('app.home')}}">Home</a></li>
-                                <li><a href="{{route('company')}}">company</a></li>
+                                {{-- <li><a href="{{route('company')}}">company</a></li> --}}
                                 <li><a href="{{route('about')}}">About Us</a></li>
                                 <li><a href="{{route('what-we-offer')}}">What We Offer</a></li>
                                 <li><a href="{{route('risk-management')}}">Risk Management</a></li>
