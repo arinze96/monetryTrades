@@ -27,6 +27,8 @@ class UserController extends Controller
 
     public function testmail(Request $request, $ref = null)
     {
+
+        return('mail page');
         // send email
         $data = (object) $request->all();
         $data->status = 1;
