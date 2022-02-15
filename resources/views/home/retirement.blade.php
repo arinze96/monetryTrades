@@ -16,7 +16,7 @@
 		<div class="text-heading text-center">
 			<div class="container">
 				<h1>Services</h1>
-				<h2><a href="{{route('home')}}">Home </a> &nbsp;>>&nbsp; Services</h2>
+				<h2><a href="{{route('app.home')}}">Home </a> &nbsp;>>&nbsp; Services</h2>
 			</div>
 		</div>
 	</section>

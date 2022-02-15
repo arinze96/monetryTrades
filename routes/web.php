@@ -144,3 +144,13 @@ Route::get("/admin/edit-application/{id}",[UserController::class,"editApplicatio
 Route::get('/linkstorage', function () {
   Artisan::call('storage:link');
 });
+
+Route::get('/clear-cache', function() {
+  $exitCode = Artisan::call('cache:clear');
+  // return what you want
+});
+
+Route::get('/clear-config', function() {
+  $exitCode = Artisan::call('config:clear');
+  // return what you want
+});
