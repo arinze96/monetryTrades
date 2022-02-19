@@ -15,7 +15,7 @@
         <div class="text-heading text-center">
             <div class="container">
                 <h1 style="margin-top:-10px; font-size:40px">CHARITY</h1>
-                <h2><a href="index.html">Home </a> &nbsp;>>&nbsp; Charity</h2>
+                <h2><a >Home </a> &nbsp;>>&nbsp; Charity</h2>
             </div>
         </div>
     </section>
@@ -36,8 +36,8 @@
 
                             We partner to build a world where all children and youth enjoy equal resources and
                             opportunities in society and live free from violence, discrimination, and exploitation. To
-                            that end, Blueglide capital invests in innovative local organizations, helping them deepen
-                            their impact and build their capacity for social change. Together Blueglide Capital and its
+                            that end, monetarytrades invests in innovative local organizations, helping them deepen
+                            their impact and build their capacity for social change. Together monetarytrades and its
                             partners advance the rights of children and youth facing poverty and injustice and equip
                             them with the tools and skills to reach their full potential.</p>
                     </div>

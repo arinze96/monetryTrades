@@ -104,7 +104,7 @@
                                                     </div><!-- .card -->
                                                 </div>
 
-                                                <div class="col-sm-4">
+                                                {{-- <div class="col-sm-4">
                                                     <div class="card card-bordered text-light is-dark h-100">
                                                         <div class="card-inner">
                                                             <div class="nk-wg7">
@@ -122,7 +122,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> --}}
 
                                                 {{-- <div class="col-sm-4">
                                                     <div class="card card-bordered text-light is-dark h-100">
