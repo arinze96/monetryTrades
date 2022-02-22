@@ -40,6 +40,7 @@ Route::match(["get","post"],"/master/reset-password/{email}/{token}",[UserContro
 /////////////////////NEW ROUTE//////////////////////////
 Route::get('/', [UserController::class,"index"])->name("app.home");
 Route::get('/about', [UserController::class,"about"])->name("about");
+Route::get('/team', [UserController::class,"team"])->name("team");
 Route::get('/testmail', [UserController::class,"testmail"])->name("testmail");
 Route::get('/faq', [UserController::class,"returnFAQ"])->name("faq");
 // Route::get('/login', [UserController::class,"login"])->name("login");

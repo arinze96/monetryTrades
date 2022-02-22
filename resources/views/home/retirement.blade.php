@@ -27,7 +27,7 @@
 		<div class="container">
 			<div class="sec-title">
 				<h2><span>Our Professional </span>Services</h2>
-				<p>There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus.</p>
+				<p>Below are the plrofessional services that we offer on our platform</p>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-12 cell cel-1">

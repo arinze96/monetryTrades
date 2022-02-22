@@ -132,6 +132,7 @@ class UserController extends Controller
             return redirect()->route('user.dashboard.view');
         } 
     }
+    
 
     public function CustomerRetirement(Request $request)
     {
@@ -220,6 +221,11 @@ class UserController extends Controller
     public function charity(Request $request)
     {
         return view('home.charity');
+    }
+
+    public function team(Request $request)
+    {
+        return view('home.team');
     }
 
     public function home(Request $request)

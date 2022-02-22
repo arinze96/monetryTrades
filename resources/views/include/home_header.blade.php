@@ -177,13 +177,15 @@
                         </div>
                     </li>
                     <!-- STAR COLLAPSE MOBILE MENU -->
-                    <a href="" data-toggle="" href="{{route('charity')}}" aria-expanded="false">
+                    <a href="{{route('charity')}}" aria-expanded="false">
                         <li class="hidden-lg-up">
                             <div class="po" style="color: black">
                                 CHARITY
                             </div>
                         </li>
                     </a>
+
+                 
                    
 
                     <!-- END COLLAPSE MOBILE MENU -->
