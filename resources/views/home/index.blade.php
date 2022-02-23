@@ -571,7 +571,7 @@
 
                                 </svg> --}}
                                 <p class="font-italic mt-2 mb-6">
-                                    Intersperse Finance Team
+                                    Monetarytrades Team
                                 </p>
                             </blockquote>
 
@@ -619,7 +619,7 @@
 
                                 </svg> --}}
                                 <p class="font-italic mt-2 mb-6">
-                                    Intersperse Finance Team
+                                    Monetarytrades Team
                                 </p>
                             </blockquote>
                         </div>
@@ -668,7 +668,7 @@
 
                                 </svg>
                                 <p class="font-italic mt-2 mb-6">
-                                    Intersperse Finance Team
+                                    Monetarytrades Team
                                 </p>
                             </blockquote>
                         </div>
@@ -718,7 +718,7 @@
 
                                 </svg>
                                 <p class="font-italic mt-2 mb-6">
-                                    Intersperse Finance Team
+                                    Monetarytrades Team
                                 </p>
                             </blockquote>
 
@@ -766,7 +766,7 @@
 
                                 </svg>
                                 <p class="font-italic mt-2 mb-6">
-                                    Intersperse Finance Team
+                                    Monetarytrades Team
                                 </p>
                             </blockquote>
                         </div>
@@ -815,7 +815,7 @@
 
                                 </svg>
                                 <p class="font-italic mt-2 mb-6">
-                                    Intersperse Finance Team.
+                                    Monetarytrades Team.
                                 </p>
                             </blockquote>
                         </div>

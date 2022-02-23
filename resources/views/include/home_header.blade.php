@@ -121,7 +121,7 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="about">About Us</a>
                             <a class="dropdown-item" href="{{route('what-we-offer')}}">What We Offer</a>
-                            <a class="dropdown-item" href="{{route('risk-management')}}">Risk Management</a>
+                            {{-- <a class="dropdown-item" href="{{route('risk-management')}}">Risk Management</a> --}}
                             <a class="dropdown-item" href="{{route('faq')}}">FAQ</a>
                             <a class="dropdown-item" href="{{route('team')}}">Our Team</a>
                         </div>
@@ -170,7 +170,7 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('investments')}}">INVESTMENTS</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="{{route('real_estate')}}">Real Estate</a>
-                            <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a>
+                            {{-- <a class="dropdown-item" href="{{route('market-analysis')}}">Market Analysis</a> --}}
                             <a class="dropdown-item" href="{{route('cryptocurrency-plans')}}">investment Plans</a>
                             <a class="dropdown-item" href="{{route('retirement')}}">Retirement</a>
                             <a class="dropdown-item" href="{{route('children-account')}}">Children Account</a>
