@@ -13,14 +13,14 @@
     <!-- START SECTION HEADINGS -->
     @include('include.home_header')
 
-    <section class="headings">
-        <div class="text-heading text-center">
-            <div class="container">
-                <h1>Retirement</h1>
-                <h2><a href="{{ route('app.home') }}">Home </a> &nbsp;>>&nbsp; Retirment</h2>
-            </div>
-        </div>
-    </section>
+	<section class="headings">
+		<div class="text-heading text-center">
+			<div class="container">
+				<h1 style="margin-top:-10px; font-size:40px">RETIREMENT</h1>
+				<h2><a href="{{ route('app.home') }}">Home </a> &nbsp;>>&nbsp; Retirement</h2>
+			</div>
+		</div>
+	</section>
     <!-- END SECTION HEADINGS -->
 
 
