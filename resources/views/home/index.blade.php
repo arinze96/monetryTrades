@@ -578,7 +578,7 @@
                         </div>
                         <div class="card-footer">
                             <p class="mb-0 font-weight-bolder" style="color:#ff2c95">Tauno Vuorine</p>
-                            <small class="text-muted">Head of Project Management</small>
+                            <small class="text-muted">Executive Vice President and Chief Financial Officer</small>
                         </div>
                     </div>
                 </div>
@@ -586,7 +586,7 @@
                     <div class="card card-blue h-100 overflow-hidden shadow bg-white border-0 px-0">
                         <div class="card-shape">
                             <img src="{{ asset('assets/images/team/tm2.jpg') }}"
-                                class="card-img-top" alt="Isaac jeremiassen">
+                                class="card-img-top" alt="Isak jeremiassen">
                             {{-- <div class="custom-shape-divider-bottom-1634717805">
                                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -624,9 +624,9 @@
                             </blockquote>
                         </div>
                         <div class="card-footer">
-                            <p class="mb-0 font-weight-bolder">Isaac jeremiassen</p>
+                            <p class="mb-0 font-weight-bolder">Isak jeremiassen</p>
                             <small class="text-muted">
-                                Software Architect</small>
+                                Administrator</small>
                         </div>
                     </div>
                 </div>
@@ -674,7 +674,7 @@
                         </div>
                         <div class="card-footer">
                             <p class="mb-0 font-weight-bolder">Birk mattson</p>
-                            <small class="text-muted">Lead Front-End Designer</small>
+                            <small class="text-muted">Founder and major stakeholder</small>
                         </div>
 
                     </div>
@@ -725,7 +725,7 @@
                         </div>
                         <div class="card-footer">
                             <p class="mb-0 font-weight-bolder">Natalie Crotch</p>
-                            <small class="text-muted">Chief Operating Officer, Partner</small>
+                            <small class="text-muted">Administrator and  Marketer</small>
                         </div>
                     </div>
                 </div>
@@ -773,7 +773,7 @@
                         <div class="card-footer">
                             <p class="mb-0 font-weight-bolder">Lindsay Hatfield</p>
                             <small class="text-muted">
-                                Senior Front-End Designer & Developer</small>
+                                Head of Private and Client Customer Services</small>
                         </div>
                     </div>
                 </div>
@@ -821,7 +821,7 @@
                         </div>
                         <div class="card-footer">
                             <p class="mb-0 font-weight-bolder">Emiko Welch</p>
-                            <small class="text-muted">Lead Developer</small>
+                            <small class="text-muted">Chief Executive Officer and President</small>
                         </div>
 
                     </div>

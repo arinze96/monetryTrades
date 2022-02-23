@@ -482,9 +482,9 @@ class AccountController extends Controller
                     $type = 0;
                     break;
             }
-            $data = Transaction::where("type", "=", config("app.transaction_type")[$type])->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(30)->get();
+            $data = Transaction::where("type", "=", config("app.transaction_type")[$type])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(30)->get();
 
-            return view("customer.$name-history", ["application"=>$application,"account"=>$userAccount,"data"=>$data]);
+            return view("user.$name-history", ["application"=>$application,"account"=>$userAccount,"data"=>$data]);
         }
     }
 

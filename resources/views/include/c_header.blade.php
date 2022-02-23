@@ -13,7 +13,7 @@
             <div class="nk-header-tools">
                 <ul class="nk-quick-nav">
                     <li class="dropdown user-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
                             <div class="user-toggle">
                                 <div class="user-avatar sm">
                                     <em class="icon ni ni-user-alt"></em>
@@ -48,7 +48,7 @@
                             <div class="dropdown-inner">
                                 <ul class="link-list">
                                     <li><a href="{{ route("user.setting.view",["general"]) }}"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
-                                    <li><a href="{{ route("user.history.view",["deposit"]) }}"><em class="icon ni ni-activity-alt"></em><span>Your Activity</span></a></li>
+                                    {{-- <li><a href="{{ route("user.history.view",["deposit"]) }}"><em class="icon ni ni-activity-alt"></em><span>Your Activity</span></a></li> --}}
                                 </ul>
                             </div>
                             <div class="dropdown-inner">

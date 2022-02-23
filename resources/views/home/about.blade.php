@@ -14,7 +14,7 @@
         <div class="text-heading text-center">
             <div class="container">
                 <h1 style="margin-top:-10px; font-size:40px">ABOUT US</h1>
-                <h2><a href="index.html">Home </a> &nbsp;>>&nbsp; About-us</h2>
+                <h2><a>Home </a> &nbsp;>>&nbsp; About-us</h2>
             </div>
         </div>
     </section>
