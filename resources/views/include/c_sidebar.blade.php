@@ -120,7 +120,7 @@
                         </li>
 
 
-                        <li class="nk-menu-item has-sub">
+                        {{-- <li class="nk-menu-item has-sub">
                             <a href="#" class="nk-menu-link nk-menu-toggle">
                                 <span class="nk-menu-icon"><em class="icon ni ni-activity-alt"></em></span>
                                 <span class="nk-menu-text">Your Activity</span>
@@ -141,9 +141,9 @@
                                         <span class="nk-menu-text">Exchange History</span>
                                     </a>
                                 </li> --}}
-
+{{-- 
                             </ul>
-                        </li>
+                        </li> --}} 
 
                         
                         <li class="nk-menu-item has-sub">

@@ -67,32 +67,7 @@
                                                             ${{ number_format($wallet->dolla_balance, 0, '.', ',') }}
                                                         </div>
                                                     </div>
-                                                </div><!-- .nk-wg1-item -->
-                                                <div class="nk-wg1-item mr-xl-4">
-                                                    <div class="nk-wg1-title text-light">Bitcoin Balance / <div
-                                                            class="dropdown">
-                                                            <a class="text-light" data-offset="0,10"
-                                                                href="javascript:void(0)">BTC</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="nk-wg1-amount">
-                                                        <div class="amount text-light">{{ $wallet->bitcoin_balance }}
-                                                        </div>
-                                                    </div>
-
-                                                </div><!-- .nk-wg1-item -->
-                                                <div class="nk-wg1-item mr-xl-4">
-                                                    <div class="nk-wg1-title text-light">Ethereum Balance / <div
-                                                            class="dropdown">
-                                                            <a class="text-light" data-offset="0,10"
-                                                                href="javascript:void(0)">ETH</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="nk-wg1-amount">
-                                                        <div class="amount text-light">{{ $wallet->ethereum_balance }}
-                                                        </div>
-                                                    </div>
-                                                </div><!-- .nk-wg1-item -->
+                                                </div>
                                                 <div class="nk-wg1-item mr-xl-4">
                                                     <div class="nk-wg1-title text-light">Referral Balance / <div
                                                             class="dropdown">
@@ -133,26 +108,6 @@
                                                         </div>
 
                                                         <div class="nk-wg1-sub">
-                                                            <div class="sub-text"><span>BTC Withdrawn</span>
-                                                                <div class="dot" data-bg="#9cabff"
-                                                                    style="background: rgb(156, 171, 255) none repeat scroll 0% 0%;">
-                                                                </div>
-                                                            </div>
-                                                            <div class="lead-text  text-light">
-                                                                {{ $wallet->bitcoin_withdrawals }}</div>
-                                                        </div>
-
-                                                        <div class="nk-wg1-sub">
-                                                            <div class="sub-text"><span>ETH Withdrawn</span>
-                                                                <div class="dot" data-bg="#9cabff"
-                                                                    style="background: rgb(156, 171, 255) none repeat scroll 0% 0%;">
-                                                                </div>
-                                                            </div>
-                                                            <div class="lead-text  text-light">
-                                                                {{ $wallet->ethereum_withdrawals }}</div>
-                                                        </div>
-
-                                                        <div class="nk-wg1-sub">
                                                             <div class="sub-text"><span>USD Invested</span>
                                                                 <div class="dot" data-bg="#9cabff"
                                                                     style="background: rgb(156, 171, 255) none repeat scroll 0% 0%;">
@@ -163,25 +118,6 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="nk-wg1-sub">
-                                                            <div class="sub-text"><span>BTC Invested</span>
-                                                                <div class="dot" data-bg="#9cabff"
-                                                                    style="background: rgb(156, 171, 255) none repeat scroll 0% 0%;">
-                                                                </div>
-                                                            </div>
-                                                            <div class="lead-text  text-light">
-                                                                {{ $wallet->bitcoin_invested }}</div>
-                                                        </div>
-
-                                                        <div class="nk-wg1-sub">
-                                                            <div class="sub-text"><span>ETH Invested</span>
-                                                                <div class="dot" data-bg="#9cabff"
-                                                                    style="background: rgb(156, 171, 255) none repeat scroll 0% 0%;">
-                                                                </div>
-                                                            </div>
-                                                            <div class="lead-text  text-light">
-                                                                {{ $wallet->ethereum_invested }}</div>
-                                                        </div>
 
                                                         <div class="nk-wg1-sub">
                                                             <div class="sub-text"><span>USD Earned</span>
@@ -194,25 +130,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="nk-wg1-sub">
-                                                            <div class="sub-text"><span>BTC Earned</span>
-                                                                <div class="dot" data-bg="#9cabff"
-                                                                    style="background: rgb(156, 171, 255) none repeat scroll 0% 0%;">
-                                                                </div>
-                                                            </div>
-                                                            <div class="lead-text  text-light">
-                                                                {{ $wallet->ethereum_earned }}</div>
-                                                        </div>
 
-                                                        <div class="nk-wg1-sub">
-                                                            <div class="sub-text"><span>ETH Earned</span>
-                                                                <div class="dot" data-bg="#9cabff"
-                                                                    style="background: rgb(156, 171, 255) none repeat scroll 0% 0%;">
-                                                                </div>
-                                                            </div>
-                                                            <div class="lead-text  text-light">
-                                                                {{ $wallet->ethereum_earned }}</div>
-                                                        </div>
 
                                                     </div>
                                                 </div><!-- .nk-wg1-item -->
