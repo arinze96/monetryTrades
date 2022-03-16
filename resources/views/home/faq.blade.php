@@ -216,7 +216,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="panel panel-default">
+                            {{-- <div class="panel panel-default">
                                 <h4 class="panel-heading mb-1">
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
                                         href="#tab-18">are there any fee for processing financial transactions?</a>
@@ -226,7 +226,7 @@
                                         No, we do not charge any additional fees or commissions.
                                     </p>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="panel panel-default">
                                 <h4 class="panel-heading mb-1">
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
