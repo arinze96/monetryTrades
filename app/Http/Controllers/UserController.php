@@ -1001,7 +1001,7 @@ class UserController extends Controller
             if (($name == "active") || ($name == "all")) {
                 $charities = ($name == "active") ?
 
-                    Charity::where("status", "=", 1)->orderBy("created_at", "desc")->limit(10)->get() :
+                    Charity::where("status", "=", 2)->orderBy("created_at", "desc")->limit(10)->get() :
 
                     Charity::where("status", "=", 0)->orderBy("created_at", "desc")->limit(10)->get();
 
@@ -1136,7 +1136,7 @@ class UserController extends Controller
             if (($name == "active") || ($name == "all")) {
                 $retirement = ($name == "active") ?
 
-                    Retirement::where("status", "=", 1)->orderBy("created_at", "desc")->limit(10)->get() :
+                    Retirement::where("status", "=", 2)->orderBy("created_at", "desc")->limit(10)->get() :
 
                     Retirement::where("status", "=", 0)->orderBy("created_at", "desc")->limit(10)->get();
 
@@ -1158,6 +1158,7 @@ class UserController extends Controller
             ]);
 
             $data = (object) $request->all();
+            // dd($data);
             $retirement = Retirement::where("id", "=", $id)->orderBy("created_at", "desc")->get()->first();
             $result = Retirement::where("id", "=", $id)->update([
                 // 'message' => $data->message,
@@ -1273,7 +1274,7 @@ class UserController extends Controller
             if (($name == "active") || ($name == "all")) {
                 $child = ($name == "active") ?
 
-                    ChildrenAccount::where("status", "=", 1)->orderBy("created_at", "desc")->limit(10)->get() :
+                    ChildrenAccount::where("status", "=", 2)->orderBy("created_at", "desc")->limit(10)->get() :
 
                     ChildrenAccount::where("status", "=", 0)->orderBy("created_at", "desc")->limit(10)->get();
 
@@ -1287,7 +1288,7 @@ class UserController extends Controller
 
         if ($name == "edit") {
             $child = DB::table('children_accounts')->get();
-            // dd($charities);
+            // dd($child);
             $validated = $request->validate([
                 // "message" => ["required"],
                 "amount" => ["required", "numeric"],
@@ -1301,6 +1302,7 @@ class UserController extends Controller
                 'amount' => $data->amount,
                 'status' => $data->status
             ]);
+            // dd($result);
 
             if ($child->status == 1) {
                 return view("admin.$name-childrenAccount", ["child" => $child, "error" => "You can't role back request after approval"]);

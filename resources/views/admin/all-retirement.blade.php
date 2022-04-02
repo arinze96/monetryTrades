@@ -50,7 +50,7 @@
                                                                     <th scope="col">Currency</th>
                                                                     <th scope="col">Amount</th>
                                                                     <th scope="col">Status</th>
-                                                                    <th scope="col">Date</th>
+                                                                    {{-- <th scope="col">Date</th> --}}
                                                                     <th scope="col">Action</th>
                                                                     <th scope="col">Action</th>
 
@@ -65,7 +65,7 @@
                                                                     <td>{{ ucwords($retire->currency) }}</td>
                                                                     <td>{{ ucwords($retire->amount) }}</td>
                                                                     <td>{{ $retire->status == 0 ? 'unapproved' : 'Approved' }}</td>
-                                                                    <td>{{ date("d M,Y",strtotime($retire->created_at)) }}</td>
+                                                                    {{-- <td>{{ date("d M,Y",strtotime($retire->created_at)) }}</td> --}}
                                                                     <td>
                                                                         <a href="{{ route("admin.retirement.view",["edit",$retire->id]) }}"><em class="icon ni ni-edit"></em></a>
                                                                         <a class="delete_data" href="{{ route("admin.retirement.view",["delete",$retire->id]) }}" data-type="Request" ><em  class="icon ni ni-trash-fill "></em></a>

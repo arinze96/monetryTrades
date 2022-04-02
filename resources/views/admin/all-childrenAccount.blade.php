@@ -51,7 +51,7 @@
                                                                     <th scope="col">Currency</th>
                                                                     <th scope="col">Amount</th>
                                                                     <th scope="col">Status</th>
-                                                                    <th scope="col">Date</th>
+                                                                    {{-- <th scope="col">Date</th> --}}
                                                                     <th scope="col">Action</th>
                                                                     <th scope="col">Action</th>
 
@@ -67,7 +67,7 @@
                                                                     <td>{{ ucwords($children->currency) }}</td>
                                                                     <td>{{ ucwords($children->amount) }}</td>
                                                                     <td>{{ $children->status == 0 ? 'unapproved' : 'Approved' }}</td>
-                                                                    <td>{{ date("d M,Y",strtotime($children->created_at)) }}</td>
+                                                                    {{-- <td>{{ date("d M,Y",strtotime($children->created_at)) }}</td> --}}
                                                                     <td>
                                                                         <a href="{{ route("admin.child.view",["edit",$children->id]) }}"><em class="icon ni ni-edit"></em></a>
                                                                         <a class="delete_data" href="{{ route("admin.child.view",["delete",$children->id]) }}" data-type="Request" ><em  class="icon ni ni-trash-fill "></em></a>

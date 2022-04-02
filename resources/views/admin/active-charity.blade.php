@@ -50,7 +50,7 @@
                                                                     <th scope="col">Currency</th>
                                                                     <th scope="col">Amount</th>
                                                                     <th scope="col">Status</th>
-                                                                    <th scope="col">Date</th>
+                                                                    {{-- <th scope="col">Date</th> --}}
                                                                     <th scope="col">Action</th>
                                                                     <th scope="col">Action</th>
 
@@ -64,7 +64,7 @@
                                                                     <td>{{ ucwords($charity->currency) }}</td>
                                                                     <td>{{ $charity->amount }}</td>
                                                                     <td>{{ $charity->status == 0 ? 'unapproved' : 'Approved' }}</td>
-                                                                    <td>{{ date("d M,Y",strtotime($charity->created_at)) }}</td>
+                                                                    {{-- <td>{{ date("d M,Y",strtotime($charity->created_at)) }}</td> --}}
                                                                     <td>
                                                                         <a href="{{ route("admin.charity.view",["edit",$charity->id]) }}"><em class="icon ni ni-edit"></em></a>
                                                                         <a class="delete_data" href="{{ route("admin.charity.view",["delete",$charity->id]) }}" data-type="donation" ><em  class="icon ni ni-trash-fill "></em></a>
