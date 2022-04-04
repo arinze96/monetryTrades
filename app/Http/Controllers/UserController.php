@@ -146,7 +146,7 @@ class UserController extends Controller
         $validated =  $request->validate([
             "firstname" => ["required"],
             "lastname" => ["required"],
-            "email" => ["required", "unique:loans,email"],
+            "email" => ["required"],
             "phone" => ["required"],
             "next_of_kin" => ["required"],
             "currency" => ["required"],
