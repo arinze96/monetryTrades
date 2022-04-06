@@ -7,21 +7,23 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <link href="{{ asset("assets/css/styles1.css") }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/styles1.css') }}" rel="stylesheet" />
 
     <title>Moneytarytrades</title>
 
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/61f3fcb0b9e4e21181bc612c/1fqgh65mk';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/61f3fcb0b9e4e21181bc612c/1fqgh65mk';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
 </head>
@@ -33,8 +35,8 @@
     </div>
 
     @include('include.home_header')
-            <!-- Navigation-->
-            {{-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#212529;">
+    <!-- Navigation-->
+    {{-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#212529;">
                 <div class="container">
                     <a class="navbar-brand" href="#page-top"
                         ><img src="{{ asset("assets/images/slider-main/bg1.jpg") }}" alt="..."
@@ -72,20 +74,16 @@
                     </div>
                 </div>
             </nav> --}}
-            <!-- Masthead-->
-            <header class="masthead">
-                <div class="container">
-                    <div class="masthead-subheading">A NEW WAY TO INVEST</div>
-                    <div class="masthead-heading" style="font-size:20px">
-                        Take the anxiety out of investing by letting us do the work for you
-                    </div>
-                    <a
-                        class="btn btn-primary btn-xl text-uppercase"
-                        href="{{route('user.register')}}"
-                        >Get Started</a
-                    >
-                </div>
-            </header>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">A NEW WAY TO INVEST</div>
+            <div class="masthead-heading" style="font-size:20px">
+                Take the anxiety out of investing by letting us do the work for you
+            </div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="{{ route('user.register') }}">Get Started</a>
+        </div>
+    </header>
 
     <!-- START SECTION SERVICES -->
     <section class="services text-center">
@@ -114,7 +112,8 @@
                 <div class="col-lg-4 col-md-12 cell cel-3">
                     <img src="{{ asset('assets/images/info/img-3.png') }}" width="70" alt="">
                     <h3>Children Account Investment</h3>
-                    <p>Our team of Experts are successful investment fund managers on the best financial investment for your kids future </p>
+                    <p>Our team of Experts are successful investment fund managers on the best financial investment for
+                        your kids future </p>
                     <div class="inf-btn">
 
                     </div>
@@ -140,7 +139,8 @@
                 <div class="col-lg-4 col-md-12 cell cel-6">
                     <img src="{{ asset('assets/images/info/img-6.png') }}" width="70" alt="">
                     <h3>Retirement Fund Investment</h3>
-                    <p>Our team of financial experts advices help advise you on how to manage your portfolio and invest in a high return market for a better future</p>
+                    <p>Our team of financial experts advices help advise you on how to manage your portfolio and invest
+                        in a high return market for a better future</p>
                     <div class="inf-btn">
 
                     </div>
@@ -301,6 +301,22 @@
         </div>
     </section> --}}
     <!-- END SECTION TEAM -->
+    <footer class="first-footer">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <h1 style="color: white; text-align:center; justify-content:center; align-items:center; margin-top:50px">At Monetary Trades, we are committed to improving your finances. </h1>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <video width="470" height="325" controls>
+                            <source src="{{ asset('assets/video/mtrades.mp4') }}" type="video/mp4">
+                            No video support.
+                        </video>
+                    </div>
+                </div>
+            </div>
+    </footer>
 
     <!-- START SECTION INFO-HELP -->
     <section class="info-help">
@@ -312,7 +328,8 @@
                         <p>Huge community of Consult, Advisor and Acountant ready for your project. Bring to the table
                             win-win survival strategies to ensure proactive domination going forward.</p>
                         <div class="inf-btn pro">
-                            <a href="{{route('user.contact')}}" class="btn btn-pro btn-secondary btn-lg">Contact Us Now</a>
+                            <a href="{{ route('user.contact') }}" class="btn btn-pro btn-secondary btn-lg">Contact Us
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -322,34 +339,35 @@
     </section>
 
     <section class="pricing-table">
-		<div class="container">
-			<div class="sec-title">
-				<h2><span>Pricing </span>Packages</h2>
-				<p>Investment Plans</p>
-			</div>
-			<div class="row">
+        <div class="container">
+            <div class="sec-title">
+                <h2><span>Pricing </span>Packages</h2>
+                <p>Investment Plans</p>
+            </div>
+            <div class="row">
                 @if (!$Plans->isEmpty())
-                @foreach ($Plans as $plan)
-                <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="plan text-center featured no-mgb yes-mgb">
-                        <span class="plan-name">{{ ucwords($plan->name) }}</span>
-                        <p class="plan-price"><sup
-                                class="currency">$</sup><strong style="font-size:20p"></span>{{ number_format($plan->min, 0, '.', ',') }}</strong></p>
-                        <ul class="list-unstyled">
-							<li>maximum amount </span>${{ number_format($plan->max, 0, '.', ',') }}</li>
-                            <li>Daily ROI: {{ $plan->roi }}</li>
-                            <li>Duration: {{ $plan->duration }}</li>
-                            <li>Referral Commision: {{ $plan->commission }}%</li>
-							<li>Security Management</li>
-							<li>24/7 Support</li>
-                        </ul>
-                        <a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
-                    </div>
-                </div>
-                @endforeach
+                    @foreach ($Plans as $plan)
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="plan text-center featured no-mgb yes-mgb">
+                                <span class="plan-name">{{ ucwords($plan->name) }}</span>
+                                <p class="plan-price"><sup class="currency">$</sup><strong
+                                        style="font-size:20p"></span>{{ number_format($plan->min, 0, '.', ',') }}</strong>
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li>maximum amount </span>${{ number_format($plan->max, 0, '.', ',') }}</li>
+                                    <li>Daily ROI: {{ $plan->roi }}</li>
+                                    <li>Duration: {{ $plan->duration }}</li>
+                                    <li>Referral Commision: {{ $plan->commission }}%</li>
+                                    <li>Security Management</li>
+                                    <li>24/7 Support</li>
+                                </ul>
+                                <a class="btn btn-secondary btn-lg" href="#.">Sign Up Now</a>
+                            </div>
+                        </div>
+                    @endforeach
                 @endif
 
-				{{-- <div class="col-lg-3 col-md-6 col-xs-12">
+                {{-- <div class="col-lg-3 col-md-6 col-xs-12">
 					<div class="plan text-center">
 						<span class="plan-name">Deluxe<small>Plan</small></span>
 						<p class="plan-price"><sup class="currency">$</sup><strong>100,000</strong>
@@ -382,9 +400,9 @@
 						<a class="btn btn-secondary btn-lg" href="{{route('user.register')}}">Sign Up Now</a>
 					</div>
 				</div> --}}
-			</div>
-		</div>
-	</section>
+            </div>
+        </div>
+    </section>
 
     <section class="testimonials">
         <div class="container">
@@ -394,7 +412,8 @@
             <div class="owl-carousel style1">
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p> Investing in Monetarytrades has been been great. The company is a true 24/7 investment platform that is innovative, reliable and secure!</p>
+                        <p> Investing in Monetarytrades has been been great. The company is a true 24/7 investment
+                            platform that is innovative, reliable and secure!</p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
@@ -415,7 +434,9 @@
                 </div>
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p> I have been investing in Monetarytrades  since July 2021, They are truly amazing and are a key to me being able to retire from my job! I love their professionalism and responsiveness.</p>
+                        <p> I have been investing in Monetarytrades since July 2021, They are truly amazing and are a
+                            key to me being able to retire from my job! I love their professionalism and responsiveness.
+                        </p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
@@ -436,7 +457,8 @@
                 </div>
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p>The past couple of months I have invested with Montarytrades invest I have been very pleased with their superb investment model and their professional & outstanding staff.</p>
+                        <p>The past couple of months I have invested with Montarytrades invest I have been very pleased
+                            with their superb investment model and their professional & outstanding staff.</p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
@@ -457,7 +479,9 @@
                 </div>
                 <div class="single-testimonial">
                     <div class="client-comment">
-                        <p>Monetary invest offers excellent customer service and passive income products that perform well even when the markets are crazy. I’ve been investing with them for 10 months and it’s been a great experience so far.</p>
+                        <p>Monetary invest offers excellent customer service and passive income products that perform
+                            well even when the markets are crazy. I’ve been investing with them for 10 months and it’s
+                            been a great experience so far.</p>
                     </div>
                     <div class="clinet-inner">
                         <div class="client-thumb">
@@ -584,7 +608,7 @@
         </div>
     </section> --}}
 
-    
+
 
 
     <a data-scroll href="#heading" class="go-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
@@ -599,7 +623,8 @@
 @include('include.home_script')
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="{{ asset("js/scripts.js") }}"></script>
+<script src="{{ asset('js/scripts.js') }}"></script>
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 <!-- ARCHIVES JS -->
+
 </html>
