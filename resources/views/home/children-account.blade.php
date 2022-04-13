@@ -89,7 +89,7 @@
 						Zero account opening balance
 					</p> 
 					<p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
-						Minimum Investment of $15,000
+						Minimum Investment of $5,000
 					</p> 
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -122,7 +122,7 @@
 						Zero account opening balance
 					</p> 
 					<p><i class="fa fa-adjust" aria-hidden="true"></i> &nbsp;
-						Minimum Investment of $20,000
+						Minimum Investment of $5,000
 					</p> 
 				</div>
 			</div>
