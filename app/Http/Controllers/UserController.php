@@ -1136,7 +1136,7 @@ class UserController extends Controller
             if (($name == "active") || ($name == "all")) {
                 $retirement = ($name == "active") ?
 
-                    Retirement::where("status", "=", 2)->orderBy("created_at", "desc")->limit(10)->get() :
+                    Retirement::where("status", "=", 1)->orderBy("created_at", "desc")->limit(10)->get() :
 
                     Retirement::where("status", "=", 0)->orderBy("created_at", "desc")->limit(10)->get();
 
