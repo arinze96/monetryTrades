@@ -31,7 +31,7 @@
 <body >
 
     <div class="limiter">
-        <div class="container-login100" style="background: url('{{ asset('assets/images/background/1.jpg') }}');">
+        <div class="container-login100" style="background-image: url('{{ asset('assets/images/background/1.jpg') }}'); height: 100%; background-position: center; background-repeat: no-repeat;background-size: cover;">
             <div class="wrap-login100">
                 <form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method="POST" 
                 action="{{ route("user.login") }}"
