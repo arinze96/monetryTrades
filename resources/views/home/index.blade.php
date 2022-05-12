@@ -90,7 +90,7 @@
         <div class="container">
             <div class="sec-title">
                 <h2><span>Our Professional </span>Services</h2>
-                <p>There are many ways in which our ivestment experts can help invest your funds for maximum returns</p>
+                <p>There are many ways in which our investment experts can help invest your funds for maximum returns</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 cell cel-1">
